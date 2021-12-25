@@ -1,0 +1,695 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+/*Left menu*/
+.container-left-menu {
+  width: 30%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.container-left {
+  width: 260px;
+  height: 740px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 20px;
+  background-color: #4a63e7;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+  box-shadow: 0px 0px 20px rgb(214, 214, 214);
+  position: fixed;
+}
+
+.container-left #image-profile {
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.container-left h1 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 10px;
+}
+.container-left h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: white;
+  text-shadow: 2px 2px 1px #ff5959;
+}
+.container-left a {
+  text-decoration: none;
+  color: white;
+  margin-top: 2px;
+  font-size: 14px;
+  padding: 4px;
+  transition: 0.2s ease-in-out;
+  width: 150px; /*Non visibili ma utili per avere un hover piu fluido*/
+  border-radius: 20px; /*Non visibili ma utili per [...]*/
+}
+
+.container-left a:hover {
+  background-color: #ff5959;
+  width: 150px;
+  border-radius: 20px;
+  transform: scale(1.08);
+}
+
+.container-left a img {
+  vertical-align: middle;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+.social-section {
+  margin-top: 8px;
+}
+.social-section a {
+  text-align: left;
+  padding: 8px;
+  border-radius: 20px;
+  font-size: 12px;
+  vertical-align: middle;
+  background-color: #ff5959;
+}
+.social-section a:hover {
+  padding: 12px;
+  background-color: midnightblue;
+  transition: 0.2s ease-in-out;
+}
+.social-section #ig-prvt:hover::after {
+  content: ": fabio._.c";
+}
+.social-section #ig-ux:hover::after {
+  content: ": unknown.designer_";
+}
+/*main container*/
+.container-main-center {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70%;
+  float: right;
+}
+/*First card content (Home section) */
+.home-content {
+  width: 70%;
+}
+#home {
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 80%;
+  height: 740px;
+  padding: 20px;
+  background-color: #4a63e7;
+  color: white;
+  box-shadow: 0px 0px 20px rgb(214, 214, 214);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#home h1 {
+  font-size: 3vw;
+}
+#home p {
+  line-height: 2;
+  font-size: 16px;
+}
+.home-content .s2i {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  transition: 0.4s ease;
+}
+.home-content .s2i:hover {
+  text-shadow: 2px 2px 1px #ff5959;
+}
+.home-content .scroll-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  position: relative;
+  vertical-align: middle;
+}
+.arrow-down {
+  position: relative;
+  animation: updown 1s infinite;
+}
+@keyframes updown {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 6px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+/*Hand animation */
+.hand {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/*Second card content (About me) */
+
+/*Scroll on reveal START*/
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1.2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+/*Scroll on reveal END */
+
+#about-me {
+  color: black;
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgb(214, 214, 214);
+  border-radius: 20px;
+}
+#about-me h2 {
+  border-bottom: 4px solid #ff5959;
+  width: 160px;
+}
+.snowflake {
+  animation: snowflake 6s ease-in-out infinite;
+  display: inline-block;
+  transform-origin: center;
+}
+/*Snowflake animation START */
+@keyframes snowflake {
+  0% {
+    transform-origin: center;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+}
+/*Snowflake animation  END */
+.memoji-section {
+  margin-top: 20px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.memoji-section img {
+  width: 200px;
+  float: right;
+  border: 4px solid #ff5959;
+  border-radius: 150px;
+}
+.memoji-section img:hover {
+  transform: scale(1.1);
+  transition: 0.4s ease;
+}
+.about-me-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  line-height: 2;
+}
+.about-me-content p {
+  width: 70%;
+}
+.about-me-content a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  border-bottom: 2px solid #ff5959;
+}
+.about-me-content a:hover {
+  color: white;
+  background-color: #ff5959;
+  padding: 2px;
+  transition: 0.1s ease-in;
+  border-radius: 4px;
+  border: none;
+}
+.about-me-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.about-me-info p {
+  color: white;
+  background-color: #ff5959;
+  padding: 6px;
+  border-radius: 10px;
+}
+.about-me-info img {
+  vertical-align: middle;
+}
+.about-me-info a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  border-bottom: 2px solid white;
+}
+.about-me-info a:hover {
+  color: #ff5959;
+  background-color: white;
+  transition: 0.1s ease-in;
+  border-radius: 4px;
+  border: none;
+}
+/*Third card content (Resume) */
+#resume {
+  color: black;
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 80%;
+  height: 740px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgb(214, 214, 214);
+  border-radius: 20px;
+}
+#resume h2 {
+  border-bottom: 4px solid #ff5959;
+  width: 140px;
+}
+#resume h2 img {
+  vertical-align: middle;
+}
+.resume-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.resume-container .container {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  flex-wrap: wrap;
+}
+/*colonna sinistra con le date*/
+.date {
+  text-align: center; /*utile per centrare la linea tratteggaita verticale*/
+}
+.timeline-vertical {
+  border-left: 4px dotted rgb(224, 224, 224);
+  height: 580px;
+  margin-top: 40px;
+  position: absolute;
+}
+.year {
+  background-color: #ff5959;
+  box-shadow: 0px 4px 10px rgb(170, 170, 170);
+  color: white;
+  font-weight: 700;
+  height: 40px;
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 8vw;
+  position: relative;
+}
+/*colonna centrale con i diplomi*/
+.diploma {
+  width: 300px;
+  display: flex;
+  justify-content: space-between; /*perche mette agli estremi il nome del diploma e il pulsante per vederlo online */
+  align-items: center;
+  background-color: #4a63e7;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgb(170, 170, 170);
+  height: 40px;
+  padding: 8px;
+  margin-bottom: 30px;
+}
+.diploma:hover {
+  transform: scale(1.04);
+  transition: 0.2s ease;
+}
+.diploma a img {
+  vertical-align: middle;
+}
+/*Fourth card content (Skills) */
+#skills {
+  color: black;
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgb(214, 214, 214);
+  border-radius: 20px;
+}
+#skills h2 {
+  border-bottom: 4px solid #ff5959;
+  width: 100px;
+}
+.skills-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.skills-container img {
+  height: 50px;
+}
+/*html-css bar*/
+.skill {
+  height: 30px;
+  width: 50%; /*width che prende meta container per consentire la visualizzazione su due colonne delle skills*/
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.html-css-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #e96329;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px;
+  animation: fill-bar 6s infinite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /*mantiene il nome a sinistra e la percentuale all-estremo destro*/
+}
+.percentage {
+  margin-left: 10px; /*utile per non far sovrapporre la percentuale al nome della skill all-inizio dell-animazione */
+}
+@keyframes fill-bar {
+  from {
+    width: 20%;
+  }
+  to {
+    width: 90%; /*tutti i width hanno il 10% in meno di lunghezza poiche la larghezza della classe .skill e' del 50% per consentire la visualizzazione delle skill su due colonne, togliere il 10% quindi serve per rimarcare di piu la differenza tra le varie percentuali*/
+  }
+}
+/*figma skill */
+
+.figma-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #1e1e1e;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px;
+  animation: fill-bar-figma 6s infinite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@keyframes fill-bar-figma {
+  from {
+    width: 20%;
+  }
+  to {
+    width: 80%;
+  }
+}
+/*xd skill */
+
+.xd-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #ff61f6;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px;
+  animation: fill-bar-xd 6s infinite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@keyframes fill-bar-xd {
+  from {
+    width: 20%;
+  }
+  to {
+    width: 75%;
+  }
+}
+/*photoshop skill */
+
+.photoshop-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #2da9ff;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px;
+  animation: fill-bar-photoshop 6s infinite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@keyframes fill-bar-photoshop {
+  from {
+    width: 20%;
+  }
+  to {
+    width: 65%;
+  }
+}
+/*illustrator skill */
+
+.illustrator-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #f59300;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px;
+  animation: fill-bar-illustrator 6s infinite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@keyframes fill-bar-illustrator {
+  from {
+    width: 20%;
+  }
+  to {
+    width: 70%;
+  }
+}
+/*office skill */
+
+.office-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #f33b00;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px;
+  animation: fill-bar-office 6s infinite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@keyframes fill-bar-office {
+  from {
+    width: 20%;
+  }
+  to {
+    width: 75%;
+  }
+}
+/*copywriting skill */
+.copywriting-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #2aca32;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px;
+  animation: fill-bar-copywriting 6s infinite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@keyframes fill-bar-copywriting {
+  from {
+    width: 20%;
+  }
+  to {
+    width: 80%;
+  }
+}
+#skills p {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#skills i {
+  color: #4a63e7;
+}
+/*Fifth card (My Projects)*/
+#my-projects {
+  color: black;
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgb(214, 214, 214);
+  border-radius: 20px;
+}
+#my-projects h2 {
+  border-bottom: 4px solid #ff5959;
+  width: 180px;
+}
+#my-projects img {
+  vertical-align: middle;
+}
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.project {
+  width: 150px;
+  height: 250px;
+  box-shadow: 0px 0px 20px rgb(214, 214, 214);
+  border-radius: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #4a63e7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  background-color: #4a63e7;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.project-links a {
+  text-decoration: none;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.project-caption {
+  background-color: #ff5959;
+  height: 30%;
+  display: flex;
+  align-items: flex-start;
+  color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+/*media query*/
+@media (max-width: 1600px) {
+  .container-left-menu {
+    align-items: flex-end;
+    width: 40%;
+  }
+  .container-main-center {
+    width: 60%;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 1200px) {
+  .about-me-content p {
+    width: 100%;
+  }
+  .about-me-info p {
+    font-size: 14px;
+  }
+  .skills-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .skill {
+    width: 100%;
+  }
+}
