@@ -409,7 +409,7 @@ body {
 }
 #skills h2 {
   border-bottom: 4px solid #ff5959;
-  width: 100px;
+  width: 120px;
 }
 .skills-container {
   width: 100%;
@@ -451,7 +451,7 @@ body {
     width: 20%;
   }
   to {
-    width: 90%; /*tutti i width hanno il 10% in meno di lunghezza poiche la larghezza della classe .skill e' del 50% per consentire la visualizzazione delle skill su due colonne, togliere il 10% quindi serve per rimarcare di piu la differenza tra le varie percentuali*/
+    width: 70%; /*tutti i width hanno il 10% in meno di lunghezza poiche la larghezza della classe .skill e' del 50% per consentire la visualizzazione delle skills su due colonne, togliere il 10% quindi serve per rimarcare di piu la differenza tra le varie percentuali*/
   }
 }
 /*figma skill */
@@ -474,7 +474,7 @@ body {
     width: 20%;
   }
   to {
-    width: 80%;
+    width: 70%;
   }
 }
 /*xd skill */
@@ -497,7 +497,7 @@ body {
     width: 20%;
   }
   to {
-    width: 75%;
+    width: 65%;
   }
 }
 /*photoshop skill */
@@ -520,7 +520,7 @@ body {
     width: 20%;
   }
   to {
-    width: 65%;
+    width: 55%;
   }
 }
 /*illustrator skill */
@@ -543,30 +543,7 @@ body {
     width: 20%;
   }
   to {
-    width: 70%;
-  }
-}
-/*office skill */
-
-.office-bar {
-  width: 0%;
-  height: 100%;
-  background-color: #f33b00;
-  color: white;
-  font-weight: 700;
-  border-radius: 10px;
-  padding: 10px;
-  animation: fill-bar-office 6s infinite;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-@keyframes fill-bar-office {
-  from {
-    width: 20%;
-  }
-  to {
-    width: 75%;
+    width: 60%;
   }
 }
 /*copywriting skill */
@@ -588,16 +565,62 @@ body {
     width: 20%;
   }
   to {
-    width: 80%;
+    width: 75%;
   }
 }
+/*office skill */
+.office-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #f33b00;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px;
+  animation: fill-bar-office 6s infinite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@keyframes fill-bar-office {
+  from {
+    width: 20%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
 #skills p {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 20px;
-  text-align: center;
 }
 #skills i {
   color: #4a63e7;
+}
+#skills h3 {
+  margin-top: 10px;
+  font-weight: 500;
+}
+.soft-skills-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.soft-skills-container .soft-skill {
+  padding: 8px;
+  background-color: #ff5959;
+  color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#skills .quote {
+  border-top: 2px solid rgb(233, 233, 233);
+  text-align: center;
 }
 /*Fifth card (My Projects)*/
 #my-projects {
