@@ -624,7 +624,7 @@ body {
   margin-top: 20px;
   margin-left: 10px;
   width: 80%;
-  height: 740px;
+  height: 100%;
   padding: 20px;
   box-shadow: 0px 0px 20px rgb(214, 214, 214);
   border-radius: 20px;
@@ -646,7 +646,52 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 200px;
+  height: 220px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgb(214, 214, 214);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.card a {
+  text-decoration: none;
+  color: white;
+  background-color: #ff5959;
+  box-shadow: 0px 0px 10px rgba(31, 31, 31, 0.253);
+  padding: 10px;
+  border-radius: 30px;
+}
+.card-caption {
+  font-weight: 500;
+  padding: 4px;
+  text-align: center;
+  color: white;
+}
+.card-caption-pepsi {
+  font-weight: 500;
+  padding: 4px;
+  text-align: center;
+  color: white;
+}
+.card-caption-pepsi img {
+  width: 40px;
+  vertical-align: middle;
+}
+.card-caption-pepsi img:hover {
+  transform: rotate(360deg);
+  transition: 2s ease;
+}
+.card h6 {
+  color: white;
 }
 /*media query*/
 @media (max-width: 1600px) {
