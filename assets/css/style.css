@@ -18,7 +18,7 @@ body {
 }
 .container-left {
   width: 260px;
-  height: 740px;
+  height: 640px;
   border-radius: 20px;
   margin-top: 20px;
   margin-right: 10px;
@@ -36,7 +36,6 @@ body {
   border-radius: 20px;
   width: 250px;
   height: 250px;
-  margin: 0 auto;
 }
 
 .container-left h1 {
@@ -58,13 +57,13 @@ body {
   padding: 4px;
   transition: 0.2s ease-in-out;
   width: 150px; /*Non visibili ma utili per avere un hover piu fluido*/
-  border-radius: 20px; /*Non visibili ma utili per [...]*/
+  border-radius: 30px; /*Non visibili ma utili per [...]*/
 }
 
 .container-left a:hover {
   background-color: #ff5959;
   width: 150px;
-  border-radius: 20px;
+  border-radius: 30px;
   transform: scale(1.08);
 }
 
@@ -73,28 +72,7 @@ body {
   margin-right: 4px;
   margin-left: 4px;
 }
-.social-section {
-  margin-top: 8px;
-}
-.social-section a {
-  text-align: left;
-  padding: 8px;
-  border-radius: 20px;
-  font-size: 12px;
-  vertical-align: middle;
-  background-color: #ff5959;
-}
-.social-section a:hover {
-  padding: 12px;
-  background-color: midnightblue;
-  transition: 0.2s ease-in-out;
-}
-.social-section #ig-prvt:hover::after {
-  content: ": fabio._.c";
-}
-.social-section #ig-ux:hover::after {
-  content: ": unknown.designer_";
-}
+
 /*main container*/
 .container-main-center {
   display: -webkit-flex;
@@ -112,7 +90,7 @@ body {
   margin-top: 20px;
   margin-left: 10px;
   width: 80%;
-  height: 740px;
+  height: 640px;
   padding: 20px;
   background-color: #4a63e7;
   color: white;
@@ -223,6 +201,8 @@ body {
   width: 80%;
   height: 100%;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
   box-shadow: 0px 0px 20px rgb(214, 214, 214);
   border-radius: 20px;
 }
@@ -246,33 +226,43 @@ body {
   }
 }
 /*Snowflake animation  END */
-.memoji-section {
-  margin-top: 20px;
-  width: 100%;
-  height: 200px;
+.about-me-content {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 20px;
+  flex-direction: column;
+
+  width: 70%;
+  margin: 0 auto;
 }
-.memoji-section img {
+.about-me-content #memoji {
   width: 200px;
-  float: right;
+  margin: 0 auto;
   border: 4px solid #ff5959;
   border-radius: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.memoji-section img:hover {
+.about-me-content #memoji:hover {
   transform: scale(1.1);
   transition: 0.4s ease;
 }
-.about-me-content {
+.about-me-content p {
+  line-height: 2;
+  margin: 0 auto;
+}
+.about-me-hobbies {
   width: 100%;
   display: flex;
-  justify-content: center;
-  line-height: 2;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 20px;
 }
-.about-me-content p {
-  width: 70%;
+
+.about-me-hobbies img {
+  width: 50px;
+  vertical-align: middle;
+  margin-right: 4px;
 }
 .about-me-content a {
   text-decoration: none;
@@ -288,34 +278,64 @@ body {
   border-radius: 4px;
   border: none;
 }
-.about-me-info {
+.about-me-socials {
   margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  gap: 10px;
+  flex-wrap: wrap;
 }
-.about-me-info p {
+.about-me-socials a {
+  text-align: left;
+  padding: 8px;
+  border-radius: 20px;
+  font-size: 14px;
+  vertical-align: middle;
+  background-color: #ff5959;
+  color: white;
+  font-weight: 500;
+}
+.about-me-socials img {
+  vertical-align: middle;
+}
+.about-me-socials a:hover {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: midnightblue;
+  transition: 0.2s ease-in-out;
+}
+.about-me-socials #ig-prvt:hover::after {
+  content: ": fabio._.c";
+}
+.about-me-socials #ig-ux:hover::after {
+  content: ": unknown.designer_";
+}
+.about-me-personal-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.about-me-personal-info li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.about-me-personal-info p {
   color: white;
   background-color: #ff5959;
   padding: 6px;
   border-radius: 10px;
 }
-.about-me-info img {
+.about-me-personal-info img {
   vertical-align: middle;
 }
-.about-me-info a {
+.about-me-personal-info a {
   text-decoration: none;
-  color: white;
   font-weight: 700;
-  border-bottom: 2px solid white;
 }
-.about-me-info a:hover {
-  color: #ff5959;
-  background-color: white;
-  transition: 0.1s ease-in;
-  border-radius: 4px;
-  border: none;
-}
+
 /*Third card content (Resume) */
 #resume {
   color: black;
@@ -633,6 +653,10 @@ body {
   border-bottom: 4px solid #ff5959;
   width: 180px;
 }
+#my-projects h3 img {
+  width: 30px;
+  margin-right: 4px;
+}
 #my-projects img {
   vertical-align: middle;
 }
@@ -646,7 +670,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   gap: 10px;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -655,7 +679,16 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.container-uxui {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 10px;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -670,6 +703,12 @@ body {
   align-items: center;
   justify-content: space-around;
 }
+.card-caption {
+  font-weight: 500;
+  padding: 4px;
+  text-align: center;
+  color: black;
+}
 .card a {
   text-decoration: none;
   color: white;
@@ -678,28 +717,83 @@ body {
   padding: 10px;
   border-radius: 30px;
 }
-.card-caption {
-  font-weight: 500;
-  padding: 4px;
-  text-align: center;
-  color: white;
-}
 .card-caption-pepsi {
   font-weight: 500;
   padding: 4px;
   text-align: center;
-  color: white;
 }
 .card-caption-pepsi img {
-  width: 40px;
+  width: 30px;
   vertical-align: middle;
 }
 .card-caption-pepsi img:hover {
   transform: rotate(360deg);
   transition: 2s ease;
 }
-.card h6 {
+/*Sixth card (Contact me)*/
+#contact-me {
+  color: black;
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgb(214, 214, 214);
+  border-radius: 20px;
+}
+#contact-me h2 {
+  border-bottom: 4px solid #ff5959;
+  width: 180px;
+}
+.contact-me-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+.contact-me-container p {
+  width: 60%;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+.contact-me-container h1 {
+  text-align: center;
+}
+.contact-me-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.contact-me-form figure {
+  display: flex;
+  flex-direction: column;
+}
+.contact-me-form button {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 30px;
+  padding: 8px;
+  background-color: #ff5959;
+}
+.contact-me-form a {
+  text-decoration: none;
   color: white;
+  font-weight: 500;
+}
+.contact-me-form figcaption {
+  font-weight: 500;
+}
+.contact-me-form img {
+  width: 100px;
+}
+.contact-me-simple-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 /*media query*/
 @media (max-width: 1600px) {
@@ -713,10 +807,10 @@ body {
   }
 }
 @media (max-width: 1200px) {
-  .about-me-content p {
+  .about-me-content {
     width: 100%;
   }
-  .about-me-info p {
+  .about-me-personal-info p {
     font-size: 14px;
   }
   .skills-container {
@@ -734,5 +828,8 @@ body {
   /*for tablet, per disporre due schede e necessario diminuire la larghezza, da 200px a 180 in modo da consentire la visualizzazione delle schede su due colonne.*/
   .card {
     width: 180px;
+  }
+  .about-me-hobbies {
+    flex-direction: column;
   }
 }

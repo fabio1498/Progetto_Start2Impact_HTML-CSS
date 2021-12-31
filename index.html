@@ -50,34 +50,10 @@
           />
           My projects</a
         >
-        <a href="#">
+        <a href="#contact-me">
           <img src="https://img.icons8.com/ios-filled/20/ffffff/phone.png" />
           Contact me</a
         >
-        <!--Linea social-->
-        <div class="social-section">
-          <a id="ig-prvt" href="#"
-            ><img
-              src="https://img.icons8.com/material-rounded/20/ffffff/instagram-new.png"
-            />IG</a
-          >
-          <a id="ig-ux" href="#"
-            ><img
-              src="https://img.icons8.com/material-rounded/20/ffffff/instagram-new.png"
-            />IG</a
-          >
-          <br />
-          <a href="#"
-            ><img
-              src="https://img.icons8.com/material-outlined/20/ffffff/github.png"
-            />GitHub</a
-          >
-          <a href="#"
-            ><img
-              src="https://img.icons8.com/ios-glyphs/20/ffffff/linkedin.png"
-            />LinkedIn</a
-          >
-        </div>
       </div>
     </div>
     <!--Sezione principale centrale-->
@@ -105,15 +81,15 @@
           </span>
         </div>
       </div>
+      <!--About me-->
       <div id="about-me" class="reveal">
         <h2>About me <span class="snowflake">❄️</span></h2>
-        <div class="memoji-section reveal">
-          <img src="assets/img/Memoji_2.png" />
-        </div>
-        <div class="about-me-content reveal">
+        <div class="about-me-content">
+          <img src="assets/img/Memoji_2.png" alt="memoji" id="memoji" />
+          <h3>Bio</h3>
           <p>
-            In the recent years I've started to learn the basics to become a
-            front-end developer, starting with HTML/CSS. Thanks to academy like
+            In the recent years I've started to learn the basics of web and
+            mobile design, starting with HTML/CSS. Thanks to academy like
             <a href="https://www.freecodecamp.org/" target="_blank"
               >FreeCodeCamp</a
             >
@@ -130,23 +106,68 @@
               >Start2Impact</a
             >.
           </p>
-        </div>
-        <div class="about-me-info reveal">
-          <p>
-            <img
-              src="https://img.icons8.com/ios-filled/20/ffffff/birthday.png"
-            />
-            Birthday: 08/06/1998
-          </p>
-          <p>
-            <img src="https://img.icons8.com/ios-filled/20/ffffff/marker.png" />
-            Location:
-            <a href="https://goo.gl/maps/qLnoUbd4kHQeAHtz5" target="_blank"
-              >Venafro, Italy</a
+          <h3>Hobbies</h3>
+          <div class="about-me-hobbies">
+            <p><img src="assets/img/icons8-ciak.gif" />Film&Tv Shows</p>
+            <p>
+              <img src="assets/img/icons8-libreria-musicale.gif" />Listen music
+            </p>
+            <p>
+              <img src="assets/img/icons8-razzo-lanciato.gif" />Play videogames
+            </p>
+            <p><img src="assets/img/icons8-fiat-500.gif" />Watch motorsport</p>
+            <p><img src="assets/img/icons8-calcio-2.gif" />Watch soccer</p>
+            <p>
+              <img src="assets/img/icons8-festa-di-ballo.gif" />Hangout with
+              friends
+            </p>
+          </div>
+          <h3>Socials</h3>
+          <div class="about-me-socials">
+            <a id="ig-prvt" href="#"
+              ><img
+                src="https://img.icons8.com/material-rounded/20/ffffff/instagram-new.png"
+              />Instagram</a
             >
-          </p>
+            <a id="ig-ux" href="#"
+              ><img
+                src="https://img.icons8.com/material-rounded/20/ffffff/instagram-new.png"
+              />Instagram</a
+            >
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/material-outlined/20/ffffff/github.png"
+              />GitHub</a
+            >
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-glyphs/20/ffffff/linkedin.png"
+              />LinkedIn</a
+            >
+          </div>
+          <h3>Personal info's</h3>
+          <div class="about-me-personal-info">
+            <ul>
+              <li>
+                <img
+                  src="https://img.icons8.com/ios-filled/20/00000/birthday.png"
+                />
+                Birthday: 08/06/1998
+              </li>
+              <li>
+                <img
+                  src="https://img.icons8.com/ios-filled/20/00000/marker.png"
+                />
+                Location:
+                <a href="https://goo.gl/maps/qLnoUbd4kHQeAHtz5" target="_blank"
+                  >Venafro, Italy</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+      <!--Resume-->
       <div id="resume" class="reveal">
         <h2>
           Resume
@@ -268,14 +289,14 @@
           </div>
           <!--Soft skills section-->
           <h3>Soft skills</h3>
-          <div class="soft-skills-container reveal">
+          <div class="soft-skills-container">
             <span class="soft-skill">Flexibility</span>
             <span class="soft-skill">Patience</span>
             <span class="soft-skill">Communication</span>
             <span class="soft-skill">Time management</span>
           </div>
         </div>
-        <div class="quote reveal">
+        <div class="quote">
           <p>
             I'm looking forward to always improve my skills, as Robert Greene
             once said:<br /><i
@@ -293,11 +314,16 @@
           My projects
           <img src="https://img.icons8.com/ios-filled/20/00000/portfolio.png" />
         </h2>
-        <div class="projects-container">
+        <div class="projects-container reveal">
           <!--HTML & CSS projects section-->
-          <h3>HTML & CSS</h3>
+          <h3>
+            <img
+              src="https://img.icons8.com/color/50/000000/html-5--v1.png"
+            />HTML
+            <img src="https://img.icons8.com/color/50/000000/css3.png" />CSS
+          </h3>
           <div class="container-html-css">
-            <div class="card" style="background-color: #1b1b1b">
+            <div class="card">
               <span class="card-caption">Technical documentation page</span>
               <a
                 href="https://fabio1498.github.io/technical-documentation/"
@@ -305,16 +331,16 @@
                 >Take a look</a
               >
             </div>
-            <div class="card" style="background-color: #1f60ec">
+            <div class="card">
               <span class="card-caption">Tribute page</span>
               <a href="https://fabio1498.github.io/tributepage/" target="_blank"
                 >Take a look</a
               >
             </div>
-            <div class="card" style="background-color: #0b20d6">
+            <div class="card">
               <span class="card-caption-pepsi">
                 <img
-                  src="https://freepngimg.com/thumb/pepsi_logo/32196-3-pepsi-logo-transparent-thumb.png"
+                  src="assets/img/icons8-pepsi-a-carbonated-soft-drink-manufactured-by-pepsico-48.png"
                 />
                 Pepsi landing page</span
               >
@@ -325,13 +351,13 @@
               >
               <h6>*hover on Pepsi logo, its fun</h6>
             </div>
-            <div class="card" style="background-color: #d9cf91">
+            <div class="card">
               <span class="card-caption">Survey page</span>
               <a href="https://fabio1498.github.io/survey/" target="_blank"
                 >Take a look</a
               >
             </div>
-            <div class="card" style="background-color: #60e467">
+            <div class="card">
               <span class="card-caption">Login page</span>
               <a href="https://fabio1498.github.io/loginpage/" target="_blank"
                 >Take a look</a
@@ -339,24 +365,99 @@
             </div>
           </div>
           <!--Start2Impact projects section-->
-          <h3>Start2Impact</h3>
+          <h3>
+            <img src="assets/img/s2i_logo.png" alt="s2i_logo" />Start2Impact
+          </h3>
           <div class="container-s2i">
-            <div class="card" style="background-color: #181818">
+            <div class="card">
               <span class="card-caption">Progetto copywriting</span>
-              <a href="https://fabio1498.github.io/loginpage/" target="_blank"
+              <a
+                href="assets/download/progetto_copywriting_fabio_cocozza.pdf"
+                download
                 >Take a look</a
               >
             </div>
-            <div class="card" style="background-color: #424242">
+            <div class="card">
               <span class="card-caption">Progetto grafica</span>
-              <a href="https://fabio1498.github.io/loginpage/" target="_blank"
-                >Take a look</a 
+              <a
+                href="assets/download/progetto_grafica_fabio_cocozza.pdf"
+                download
+                >Take a look</a
               >
             </div>
           </div>
           <!--UX/UI Design projects section-->
-          <h3>UX/UI Design, Figma</h3>
-          <div class="container-uxui"></div>
+          <h3>
+            <img
+              src="https://img.icons8.com/color/30/000000/figma--v1.png"
+            />UX/UI Design, Figma prototypes
+          </h3>
+          <div class="container-uxui">
+            <div class="card">
+              <span class="card-caption">Tifosi <br />(Soccer app)</span>
+              <a
+                href="https://www.figma.com/proto/T9SwxyxdxwcCmyAXDj5V2u/Tifosi?page-id=0%3A1&node-id=1%3A2&starting-point-node-id=1%3A2"
+                target="_blank"
+                >Take a look</a
+              >
+              <h6>With dark mode</h6>
+            </div>
+            <div class="card">
+              <span class="card-caption">Instagram re-design</span>
+              <a
+                href="https://www.figma.com/proto/m3A6jNSnTpyXhY5M3Ebwa9/Instagram?page-id=0%3A1&node-id=6%3A146&starting-point-node-id=6%3A146"
+                target="_blank"
+                >Take a look</a
+              >
+            </div>
+            <div class="card">
+              <span class="card-caption">Travel app</span>
+              <a
+                href="https://www.figma.com/proto/su3peEgjwPUFOWAN073sYs/Travel-App?page-id=0%3A1&node-id=23%3A283&starting-point-node-id=2%3A2"
+                target="_blank"
+                >Take a look</a
+              >
+            </div>
+            <div class="card">
+              <span class="card-caption">Weather app</span>
+              <a
+                href="https://www.figma.com/proto/DM6lvQjfS6O8buFmfb7Hgg/Weather-App?page-id=0%3A1&node-id=1%3A3&starting-point-node-id=1%3A3"
+                target="_blank"
+                >Take a look</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Contact me section-->
+      <div id="contact-me" class="reveal">
+        <h2>
+          Contact me
+          <img src="https://img.icons8.com/ios-filled/20/00000/phone.png" />
+        </h2>
+        <div class="contact-me-container">
+          <h1>Call me or email me</h1>
+          <p>
+            You can scan the QR code to call me or simply click the email below
+            to open your favorite email app and write me.
+          </p>
+          <div class="contact-me-form">
+            <figure>
+              <img src="assets/img/qr-code.png" alt="qr-code" />
+              <figcaption>Scan</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/img/icons8-email-aperta-96.png" alt="qr-code" />
+              <button>
+                <a href="mailto:cocozzafabio@outlook.it">Email me</a>
+              </button>
+            </figure>
+          </div>
+          <div class="contact-me-simple-form">
+            <p>If you like the old-style, you can use the details below...🙄</p>
+            <p><b>Telephone</b>: +39 366-3897999</p>
+            <p><b>Email</b>: cocozzafabio@outlook.it</p>
+          </div>
         </div>
       </div>
       <!--Fine div container centrale (line 83)-->
