@@ -185,7 +185,7 @@ body {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: all 1.2s ease;
+  transition: all 1.4s ease;
 }
 
 .reveal.active {
@@ -773,18 +773,16 @@ body {
   display: flex;
   flex-direction: column;
 }
-.contact-me-form button {
+input[type="submit"] {
   font-family: "Poppins", sans-serif;
   border: none;
   border-radius: 30px;
   padding: 8px;
   background-color: #ff5959;
-}
-.contact-me-form a {
-  text-decoration: none;
   color: white;
-  font-weight: 500;
+  cursor: pointer;
 }
+
 .contact-me-form figcaption {
   font-weight: 500;
 }
@@ -795,6 +793,20 @@ body {
   display: flex;
   flex-direction: column;
   text-align: left;
+}
+footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 10px;
+  width: 80%;
+  color: rgb(112, 112, 112);
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  border-bottom: 1px solid black;
 }
 /*media query*/
 @media (max-width: 1600px) {
@@ -859,11 +871,39 @@ body {
   #home h1 {
     font-size: 6vw;
   }
-
+  .year {
+    font-size: 14px;
+  }
   .card {
     width: 180px;
   }
   .about-me-hobbies {
     flex-direction: column;
+  }
+}
+@media (max-width: 436px) {
+  .timeline-vertical {
+    display: none;
+  }
+  .year {
+    display: none;
+  }
+  .soft-skills-container {
+    justify-content: space-evenly;
+  }
+  .degree {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 16px;
+  }
+  .container-html-css {
+    justify-content: space-evenly;
+  }
+  .container-s2i {
+    justify-content: space-evenly;
+  }
+  .container-uxui {
+    justify-content: space-evenly;
   }
 }
