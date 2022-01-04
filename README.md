@@ -45,3 +45,9 @@ To complete this argument, the challange was to create a portfolio that shows yo
 ## Demo
 [Interact with the portfolio here](https://fabio1498.github.io/Progetto_Start2Impact_HTML-CSS/)
 
+## Screenshots
+[![8-A34-E2-F1-90-AC-46-B2-9723-3912-BDCF13-AD.png](https://i.postimg.cc/NFmbsbHs/8-A34-E2-F1-90-AC-46-B2-9723-3912-BDCF13-AD.png)](https://postimg.cc/ct1fTRh2)
+
+[![0-F440-B29-C24-F-4-E43-8928-AFAB5-A0-F70-A0.png](https://i.postimg.cc/rmJFB2hM/0-F440-B29-C24-F-4-E43-8928-AFAB5-A0-F70-A0.png)](https://postimg.cc/CBRg8XTQ)
+
+[![00-C2-AB7-A-37-AE-4-CEA-964-D-E4-CB6-E9-B64-F6.png](https://i.postimg.cc/MG0WB8JV/00-C2-AB7-A-37-AE-4-CEA-964-D-E4-CB6-E9-B64-F6.png)](https://postimg.cc/mcDfxJDg)
