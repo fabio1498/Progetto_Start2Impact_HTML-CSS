@@ -8,6 +8,19 @@ html {
 body {
   font-family: "Poppins", sans-serif;
 }
+/*Scroll on reveal START*/
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1.4s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
 /*Left menu*/
 .container-left-menu {
   width: 30%;
@@ -158,7 +171,7 @@ body {
   }
   10% {
     transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
+  }
   20% {
     transform: rotate(-8deg);
   }
@@ -173,26 +186,12 @@ body {
   }
   60% {
     transform: rotate(0deg);
-  } /* Reset for the last half to pause */
+  }
   100% {
     transform: rotate(0deg);
   }
 }
 /*Second card content (About me) */
-
-/*Scroll on reveal START*/
-.reveal {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: all 1.4s ease;
-}
-
-.reveal.active {
-  transform: translateY(0px);
-  opacity: 1;
-}
-/*Scroll on reveal END */
 
 #about-me {
   color: black;
@@ -225,7 +224,6 @@ body {
     transform-origin: center;
   }
 }
-/*Snowflake animation  END */
 .about-me-content {
   display: flex;
   flex-direction: column;
@@ -468,7 +466,7 @@ body {
     width: 20%;
   }
   to {
-    width: 70%; /*tutti i width hanno il 10% in meno di lunghezza poiche la larghezza della classe .skill e' del 50% per consentire la visualizzazione delle skills su due colonne, togliere il 10% quindi serve per rimarcare di piu la differenza tra le varie percentuali*/
+    width: 65%; /*tutti i width hanno il 10% in meno di lunghezza poiche la larghezza della classe .skill e' del 50% per consentire la visualizzazione delle skills su due colonne, togliere il 10% quindi serve per rimarcare di piu la differenza tra le varie percentuali*/
   }
 }
 /*figma skill */
@@ -491,7 +489,7 @@ body {
     width: 20%;
   }
   to {
-    width: 70%;
+    width: 75%;
   }
 }
 /*xd skill */
@@ -514,7 +512,7 @@ body {
     width: 20%;
   }
   to {
-    width: 65%;
+    width: 70%;
   }
 }
 /*photoshop skill */
@@ -560,7 +558,7 @@ body {
     width: 20%;
   }
   to {
-    width: 60%;
+    width: 65%;
   }
 }
 /*copywriting skill */
@@ -604,7 +602,7 @@ body {
     width: 20%;
   }
   to {
-    width: 70%;
+    width: 60%;
   }
 }
 
