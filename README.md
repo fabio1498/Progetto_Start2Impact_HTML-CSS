@@ -1,11 +1,14 @@
 
 # Progetto HTML/CSS - Start2Impact
+
 IT
+
 Progetto per la superguida HTML e CSS di Start2Impact.
 Per concludere il percorso di quest'argomento, è richiesto un progetto che riguarda la creazione di un sito personale, in cui spiegare le proprie skills
 e mostrare i propri lavori e diplomi ottenuti.
 
 EN
+
 This portfolio website has been created to complete the HTML/CSS argument on Start2Impact.
 To complete this argument, the challange was to create a portfolio that shows your skills, your recent works and your degrees.
 ## Authors
@@ -16,6 +19,7 @@ To complete this argument, the challange was to create a portfolio that shows yo
 ## Documentation
 
 [Documentation for scroll to reveal](https://www.codingsnow.com/2021/01/reveal-webpage-elements-on-scroll-on.html)
+
 [Icons and GIF's used](https://icons8.it/)
 
 
