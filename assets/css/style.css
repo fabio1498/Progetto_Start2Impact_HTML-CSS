@@ -158,10 +158,10 @@ body {
 }
 /*Hand animation */
 .hand {
-  animation-name: wave-animation; 
-  animation-duration: 2.5s; 
-  animation-iteration-count: infinite; 
-  transform-origin: 70% 70%; 
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
   display: inline-block;
 }
 
@@ -836,7 +836,7 @@ footer a {
   }
 }
 @media (max-width: 856px) {
-  /*for tablet, per disporre due schede e necessario diminuire la larghezza, da 200px a 180 in modo da consentire la visualizzazione delle schede su due colonne.*/
+  /*for tablet*/
   .container-left-menu {
     display: -webkit-flex;
     display: flex;
@@ -873,13 +873,14 @@ footer a {
     font-size: 14px;
   }
   .card {
-    width: 180px;
+    width: 180px; /*useful to have two windows instead of only one*/
   }
   .about-me-hobbies {
     flex-direction: column;
   }
 }
 @media (max-width: 436px) {
+  /*for smartphone*/
   .timeline-vertical {
     display: none;
   }
