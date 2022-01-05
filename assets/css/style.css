@@ -69,8 +69,8 @@ body {
   font-size: 14px;
   padding: 4px;
   transition: 0.2s ease-in-out;
-  width: 150px; /*Non visibili ma utili per avere un hover piu fluido*/
-  border-radius: 30px; /*Non visibili ma utili per [...]*/
+  width: 150px; /*Not visible but needed for a fluid hover*/
+  border-radius: 30px; /*Not visible but needed for a fluid hover*/
 }
 
 .container-left a:hover {
@@ -158,10 +158,10 @@ body {
 }
 /*Hand animation */
 .hand {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  animation-name: wave-animation; 
+  animation-duration: 2.5s; 
+  animation-iteration-count: infinite; 
+  transform-origin: 70% 70%; 
   display: inline-block;
 }
 
@@ -214,7 +214,7 @@ body {
   display: inline-block;
   transform-origin: center;
 }
-/*Snowflake animation START */
+/*Snowflake animation  */
 @keyframes snowflake {
   0% {
     transform-origin: center;
@@ -369,9 +369,9 @@ body {
   position: absolute;
   flex-wrap: wrap;
 }
-/*colonna sinistra con le date*/
+/*left column with dates*/
 .date {
-  text-align: center; /*utile per centrare la linea tratteggaita verticale*/
+  text-align: center; /*needed for center the dotted line*/
 }
 .timeline-vertical {
   border-left: 4px dotted rgb(224, 224, 224);
@@ -394,11 +394,11 @@ body {
   width: 8vw;
   position: relative;
 }
-/*colonna centrale con i diplomi*/
+/*central column with degrees*/
 .diploma {
   width: 300px;
   display: flex;
-  justify-content: space-between; /*perche mette agli estremi il nome del diploma e il pulsante per vederlo online */
+  justify-content: space-between; /*it puts on the ends the degree and the button to look at it */
   align-items: center;
   background-color: #4a63e7;
   color: white;
@@ -429,7 +429,7 @@ body {
 .skills-container {
   width: 100%;
   display: flex;
-  flex-direction: row; /*consente la visualizzazione su due colonne e non in un unica colonna*/
+  flex-direction: row; /*useful to have the skills in two columns instead of two*/
   flex-wrap: wrap;
   justify-content: flex-start;
 }
@@ -439,7 +439,7 @@ body {
 /*html-css bar*/
 .skill {
   height: 30px;
-  width: 50%; /*width che prende meta container per consentire la visualizzazione su due colonne delle skills*/
+  width: 50%; /*width that takes half of the container which allows to have the skills on two columns*/
   display: flex;
   flex-direction: row;
   margin-top: 20px;
@@ -456,10 +456,10 @@ body {
   animation: fill-bar 6s infinite;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; /*mantiene il nome a sinistra e la percentuale all-estremo destro*/
+  justify-content: space-between; /*keeps the name of the skill at the left, and the percentage at right*/
 }
 .percentage {
-  margin-left: 10px; /*utile per non far sovrapporre la percentuale al nome della skill all-inizio dell-animazione */
+  margin-left: 10px; /*needed to not go over on the name of the skill with the percentage*/
 }
 @keyframes fill-bar {
   from {
