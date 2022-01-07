@@ -34,7 +34,6 @@ body {
   height: 640px;
   border-radius: 20px;
   margin-top: 20px;
-
   padding: 20px;
   background-color: #4a63e7;
   color: white;
@@ -96,9 +95,7 @@ body {
   float: right;
 }
 /*First card content (Home section) */
-.home-content {
-  width: 70%;
-}
+
 #home {
   margin-top: 20px;
   margin-left: 10px;
@@ -119,6 +116,9 @@ body {
 #home p {
   line-height: 2;
   font-size: 16px;
+}
+.home-content {
+  width: 70%;
 }
 .home-content .s2i {
   text-decoration: none;
@@ -227,7 +227,6 @@ body {
 .about-me-content {
   display: flex;
   flex-direction: column;
-
   width: 70%;
   margin: 0 auto;
 }
@@ -356,7 +355,7 @@ body {
 .resume-container {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .resume-container .container {
@@ -366,8 +365,6 @@ body {
   flex-direction: row;
   justify-content: center;
   gap: 20px;
-  position: absolute;
-  flex-wrap: wrap;
 }
 /*left column with dates*/
 .date {
@@ -398,7 +395,7 @@ body {
 .diploma {
   width: 300px;
   display: flex;
-  justify-content: space-between; /*it puts on the ends the degree and the button to look at it */
+  justify-content: space-between; /*it puts on the starts the degree and the button to look at it at the end*/
   align-items: center;
   background-color: #4a63e7;
   color: white;
