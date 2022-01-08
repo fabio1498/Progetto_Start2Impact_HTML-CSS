@@ -38,9 +38,11 @@ To complete this argument, the challange was to create a portfolio that shows yo
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Primary color | ![#4A63E7](https://via.placeholder.com/10/4A63E7?text=+) #4A63E7 |
-| Secondary color | ![#FF5959](https://via.placeholder.com/10/FF5959?text=+) #FF5959 |
 | Neutral color | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) #FFFFFF |
+| Secondary color | ![#4A63E7](https://via.placeholder.com/10/4A63E7?text=+) #4A63E7 |
+| Third color | ![#FF5959](https://via.placeholder.com/10/FF5959?text=+) #FF5959 |
+| Fourth color | ![#191970](https://via.placeholder.com/10/191970?text=+) #191970 |
+
 
 ## Demo
 [Interact with the portfolio here](https://fabio1498.github.io/Progetto_Start2Impact_HTML-CSS/)
