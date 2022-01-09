@@ -463,7 +463,7 @@ body {
     width: 20%;
   }
   to {
-    width: 65%; /*tutti i width hanno il 10% in meno di lunghezza poiche la larghezza della classe .skill e' del 50% per consentire la visualizzazione delle skills su due colonne, togliere il 10% quindi serve per rimarcare di piu la differenza tra le varie percentuali*/
+    width: 65%;
   }
 }
 /*figma skill */
