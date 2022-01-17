@@ -1,15 +1,16 @@
 
-# Progetto HTML/CSS - Start2Impact
+# Portfolio Fabio Cocozza
 
 IT
 
-Progetto per la superguida HTML e CSS di Start2Impact.
+Portfolio crearto come progetto per la superguida HTML e CSS di Start2Impact.
 Per concludere il percorso di quest'argomento, è richiesto un progetto che riguarda la creazione di un sito personale, in cui spiegare le proprie skills
 e mostrare i propri lavori e diplomi ottenuti.
+Feedback progetto: Clicca qui(https://ibb.co/NTgPHbR)
 
 EN
 
-This portfolio website has been created to complete the HTML/CSS argument on Start2Impact.
+Portfolio created to complete the HTML/CSS argument on Start2Impact.
 To complete this argument, the challange was to create a portfolio that shows your skills, your recent works and your degrees.
 ## Authors
 
