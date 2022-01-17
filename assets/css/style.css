@@ -713,6 +713,11 @@ body {
   padding: 10px;
   border-radius: 30px;
 }
+.card a:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+  background-color: midnightblue;
+}
 .card-caption-pepsi {
   font-weight: 500;
   padding: 4px;
@@ -777,7 +782,11 @@ input[type="submit"] {
   color: white;
   cursor: pointer;
 }
-
+.contact-me-container input:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+  background-color: midnightblue;
+}
 .contact-me-form figcaption {
   font-weight: 500;
 }
