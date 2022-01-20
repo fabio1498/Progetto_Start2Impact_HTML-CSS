@@ -734,7 +734,7 @@ body {
 }
 
 #planets-draw {
-  background: url(assets/img/IMG_0069_thmb.JPG);
+  background: url(/assets/img/IMG_0069_thmb.JPG);
   background-size: 200px 220px;
 }
 #planets-draw .card-caption {
@@ -742,7 +742,7 @@ body {
   text-shadow: 0px 2px 2px #ff5959;
 }
 #sunset-draw {
-  background: url(assets/img/IMG_0070\ _thmb.JPG);
+  background: url(/assets/img/IMG_0070\ _thmb.JPG);
   background-size: 200px 220px;
 }
 #sunset-draw .card-caption {
@@ -750,7 +750,7 @@ body {
   text-shadow: 0px 2px 2px #ff5959;
 }
 #skyscrapers-draw {
-  background: url(assets/img/IMG_0083_thmb.JPEG);
+  background: url(/assets/img/IMG_0083_thmb.JPEG);
   background-size: 200px 220px;
 }
 #skyscrapers-draw .card-caption {
@@ -758,7 +758,7 @@ body {
   text-shadow: 0px 2px 2px #ff5959;
 }
 #canyon-draw {
-  background: url(assets/img//IMG_0080_thmb.jpg);
+  background: url(/assets/img//IMG_0080_thmb.jpg);
   background-size: 200px 220px;
 }
 #canyon-draw .card-caption {
