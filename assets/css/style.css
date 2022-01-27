@@ -779,6 +779,10 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+#sunset {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 .card-caption-draw {
   color: white;
   text-shadow: 0px 2px 2px #ff5959;
@@ -962,6 +966,9 @@ footer a {
     justify-content: space-evenly;
   }
   .container-uxui {
+    justify-content: space-evenly;
+  }
+  .container-draw {
     justify-content: space-evenly;
   }
 }
