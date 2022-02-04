@@ -364,6 +364,14 @@ body {
 #resume h2 img {
   vertical-align: middle;
 }
+#resume h4 {
+  color: grey;
+  font-weight: 400;
+}
+#resume h4 img {
+  vertical-align: middle;
+}
+
 .resume-container {
   width: 100%;
   display: flex;
