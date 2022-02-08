@@ -79,13 +79,13 @@ body {
   font-size: 14px;
   padding: 4px;
   transition: 0.2s ease-in-out;
-  width: 160px; /*Not visible but needed for a fluid hover*/
+  width: 200px; /*Not visible but needed for a fluid hover*/
   border-radius: 30px; /*Not visible but needed for a fluid hover*/
 }
 
 .container-left a:hover {
   background-color: #ff5959;
-  width: 160px;
+  width: 200px;
   border-radius: 30px;
   transform: scale(1.08);
 }
