@@ -718,6 +718,10 @@ body {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+#subtitle-draw a {
+  text-decoration: none;
+  color: #4a63e7;
+}
 .card {
   width: 200px;
   height: 200px;
@@ -770,38 +774,13 @@ body {
 }
 .container-draw a {
   border-radius: 20px;
+  text-align: center;
 }
-#planets-draw {
+.thumbnail-draw {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-#sunset-draw {
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-#skyscrapers-draw {
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-#airplane {
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-#space-ship {
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-#donut {
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-#sunset {
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
 .card-caption-draw {
   color: white;
   text-shadow: 0px 2px 2px #ff5959;
