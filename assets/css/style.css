@@ -338,17 +338,17 @@ body {
   animation: gradient-animation 8s ease infinite;
 }
 #ig-ux {
-  background: linear-gradient(110deg, #351ff7, #ff8a2b);
+  background: linear-gradient(120deg, #1900ff, #ff7300);
   background-size: 180% 180%;
   animation: gradient-animation 8s ease infinite;
 }
 #git-hub {
   background: linear-gradient(110deg, #423e68, #333130);
   background-size: 180% 180%;
-  animation: gradient-animation 8s ease infinite;
+  animation: gradient-animation 4s ease infinite;
 }
 #linked-in {
-  background: linear-gradient(110deg, #2867b2, #2e3080);
+  background: linear-gradient(110deg, #2973cc, #2e3080);
   background-size: 180% 180%;
   animation: gradient-animation 8s ease infinite;
 }
