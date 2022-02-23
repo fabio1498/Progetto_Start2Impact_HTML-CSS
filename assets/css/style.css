@@ -7,6 +7,7 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #111111;
 }
 /*Scroll on reveal*/
 .reveal {
@@ -20,7 +21,17 @@ body {
   transform: translateY(0px);
   opacity: 1;
 }
-
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 /*Left menu*/
 .container-left-menu {
   width: 30%;
@@ -35,12 +46,14 @@ body {
   border-radius: 20px;
   margin-top: 20px;
   padding: 20px;
-  background-color: #4a63e7;
+  background: linear-gradient(240deg, #2ba0ff, #351ff7, #ffc62b);
+  background-size: 180% 180%;
+  animation: gradient-animation 8s ease infinite;
   color: white;
   display: flex;
   flex-direction: column;
   line-height: 40px;
-  box-shadow: 0px 0px 20px rgb(214, 214, 214);
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
   position: fixed;
 }
 #full-size-imgprofile {
@@ -48,7 +61,7 @@ body {
   width: 30px;
 }
 #full-size-imgprofile:hover {
-  background-color: #ff5959;
+  background-color: #ffc62b;
   border-top-left-radius: 20px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -58,7 +71,6 @@ body {
   border-radius: 20px;
   width: 250px;
   height: 250px;
-  cursor: pointer;
 }
 
 .container-left h1 {
@@ -70,7 +82,7 @@ body {
   text-transform: uppercase;
   font-size: 18px;
   color: white;
-  text-shadow: 2px 2px 1px #ff5959;
+  text-shadow: 2px 2px 2px #ffc62b;
 }
 .container-left a {
   text-decoration: none;
@@ -84,7 +96,7 @@ body {
 }
 
 .container-left a:hover {
-  background-color: #ff5959;
+  background-color: #ffffff25;
   width: 200px;
   border-radius: 30px;
   transform: scale(1.08);
@@ -113,9 +125,11 @@ body {
   width: 80%;
   height: 640px;
   padding: 20px;
-  background-color: #4a63e7;
+  background: linear-gradient(110deg, #2ba0ff, #351ff7, #ffc62b);
+  background-size: 180% 180%;
+  animation: gradient-animation 8s ease infinite;
   color: white;
-  box-shadow: 0px 0px 20px rgb(214, 214, 214);
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -127,6 +141,7 @@ body {
 #home p {
   line-height: 2;
   font-size: 16px;
+  font-weight: 300;
 }
 .home-content {
   width: 70%;
@@ -138,7 +153,7 @@ body {
   transition: 0.4s ease;
 }
 .home-content .s2i:hover {
-  text-shadow: 2px 2px 1px #ff5959;
+  text-shadow: 2px 2px 1px #ffc62b;
 }
 .home-content .scroll-down {
   display: flex;
@@ -205,7 +220,7 @@ body {
 /*Second card content (About me) */
 
 #about-me {
-  color: black;
+  color: white;
   margin-top: 20px;
   margin-left: 10px;
   width: 80%;
@@ -213,12 +228,12 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 0px 20px rgb(214, 214, 214);
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
   border-radius: 20px;
 }
 
 #about-me h2 {
-  border-bottom: 4px solid #ff5959;
+  border-bottom: 4px solid #ffc62b;
   width: 160px;
 }
 .snowflake {
@@ -245,7 +260,7 @@ body {
 .about-me-content #memoji {
   width: 200px;
   margin: 0 auto;
-  border: 4px solid #ff5959;
+  border: 4px solid #ffc62b;
   border-radius: 150px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -257,6 +272,7 @@ body {
 .about-me-content p {
   line-height: 2;
   margin: 0 auto;
+  font-weight: 300;
 }
 .about-me-hobbies {
   width: 100%;
@@ -267,7 +283,11 @@ body {
   margin-bottom: 20px;
   gap: 20px;
 }
-
+#soccer-ball {
+  background-color: white;
+  border-radius: 30px;
+  padding: 2px;
+}
 .about-me-hobbies img {
   width: 50px;
   vertical-align: middle;
@@ -275,13 +295,12 @@ body {
 }
 .about-me-content a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: 700;
-  border-bottom: 2px solid #ff5959;
 }
 .about-me-content a:hover {
   color: white;
-  background-color: #ff5959;
+  background-color: #ffc62b;
   padding: 2px;
   transition: 0.1s ease-in;
   border-radius: 4px;
@@ -301,7 +320,7 @@ body {
   border-radius: 20px;
   font-size: 14px;
   vertical-align: middle;
-  background-color: #ff5959;
+  background-color: #ffc62b;
   color: white;
   font-weight: 500;
 }
@@ -311,8 +330,27 @@ body {
 .about-me-socials a:hover {
   padding: 10px;
   border-radius: 20px;
-  background-color: midnightblue;
   transition: 0.2s ease-in-out;
+}
+#ig-prvt {
+  background: linear-gradient(110deg, #351ff7, #ff8a2b);
+  background-size: 180% 180%;
+  animation: gradient-animation 8s ease infinite;
+}
+#ig-ux {
+  background: linear-gradient(110deg, #351ff7, #ff8a2b);
+  background-size: 180% 180%;
+  animation: gradient-animation 8s ease infinite;
+}
+#git-hub {
+  background: linear-gradient(110deg, #423e68, #333130);
+  background-size: 180% 180%;
+  animation: gradient-animation 8s ease infinite;
+}
+#linked-in {
+  background: linear-gradient(110deg, #2867b2, #2e3080);
+  background-size: 180% 180%;
+  animation: gradient-animation 8s ease infinite;
 }
 .about-me-socials #ig-prvt:hover::after {
   content: ": fabio._.c";
@@ -348,24 +386,24 @@ body {
 
 /*Third card content (Resume) */
 #resume {
-  color: black;
+  color: white;
   margin-top: 20px;
   margin-left: 10px;
   width: 80%;
-  height: 740px;
+  height: 100%;
   padding: 20px;
-  box-shadow: 0px 0px 20px rgb(214, 214, 214);
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
   border-radius: 20px;
 }
 #resume h2 {
-  border-bottom: 4px solid #ff5959;
+  border-bottom: 4px solid #ffc62b;
   width: 140px;
 }
 #resume h2 img {
   vertical-align: middle;
 }
 #resume h4 {
-  color: grey;
+  color: rgb(235, 235, 235);
   font-weight: 300;
 }
 #resume h4 img {
@@ -397,8 +435,8 @@ body {
   position: absolute;
 }
 .year {
-  background-color: #ff5959;
-  box-shadow: 0px 4px 10px rgb(170, 170, 170);
+  background-color: #ffc62b;
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
   color: white;
   font-weight: 700;
   height: 40px;
@@ -417,30 +455,57 @@ body {
   display: flex;
   justify-content: space-between; /*it puts on the starts the degree and the button to look at it at the end*/
   align-items: center;
-  background-color: #4a63e7;
+  background-color: #272727;
   color: white;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgb(170, 170, 170);
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
   height: 40px;
   padding: 8px;
   margin-bottom: 30px;
+  font-weight: 500;
+}
+.diploma a {
+  margin-left: 4px;
+  margin-right: 4px;
 }
 .diploma a img {
   vertical-align: middle;
 }
+.ef-set {
+  color: black;
+  background-color: white;
+}
+.accdm {
+  background-color: #2679e3;
+}
+.ibmi {
+  color: black;
+  background-color: white;
+}
+.fcc {
+  background-color: #0a0a23;
+}
+.s2impact {
+  background-color: rgb(9, 219, 44);
+}
+.diploma-logo {
+  width: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
 /*Fourth card content (Skills) */
 #skills {
-  color: black;
+  color: white;
   margin-top: 20px;
   margin-left: 10px;
   width: 80%;
   height: 100%;
   padding: 20px;
-  box-shadow: 0px 0px 20px rgb(214, 214, 214);
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
   border-radius: 20px;
 }
 #skills h2 {
-  border-bottom: 4px solid #ff5959;
+  border-bottom: 4px solid #ffc62b;
   width: 120px;
 }
 .skills-container {
@@ -467,7 +532,7 @@ body {
   height: 100%;
   background-color: #e96329;
   color: white;
-  font-weight: 700;
+  font-weight: 500;
   border-radius: 10px;
   padding: 10px;
   animation: fill-bar 6s infinite;
@@ -493,7 +558,7 @@ body {
   height: 100%;
   background-color: #1e1e1e;
   color: white;
-  font-weight: 700;
+  font-weight: 500;
   border-radius: 10px;
   padding: 10px;
   animation: fill-bar-figma 6s infinite;
@@ -516,7 +581,7 @@ body {
   height: 100%;
   background-color: #ff61f6;
   color: white;
-  font-weight: 700;
+  font-weight: 500;
   border-radius: 10px;
   padding: 10px;
   animation: fill-bar-xd 6s infinite;
@@ -526,7 +591,7 @@ body {
 }
 @keyframes fill-bar-xd {
   from {
-    width: 20%;
+    width: 24%;
   }
   to {
     width: 70%;
@@ -539,7 +604,7 @@ body {
   height: 100%;
   background-color: #2da9ff;
   color: white;
-  font-weight: 700;
+  font-weight: 500;
   border-radius: 10px;
   padding: 10px;
   animation: fill-bar-photoshop 6s infinite;
@@ -549,7 +614,7 @@ body {
 }
 @keyframes fill-bar-photoshop {
   from {
-    width: 20%;
+    width: 24%;
   }
   to {
     width: 55%;
@@ -562,7 +627,7 @@ body {
   height: 100%;
   background-color: #f59300;
   color: white;
-  font-weight: 700;
+  font-weight: 500;
   border-radius: 10px;
   padding: 10px;
   animation: fill-bar-illustrator 6s infinite;
@@ -584,7 +649,7 @@ body {
   height: 100%;
   background-color: #2aca32;
   color: white;
-  font-weight: 700;
+  font-weight: 500;
   border-radius: 10px;
   padding: 10px;
   animation: fill-bar-copywriting 6s infinite;
@@ -594,7 +659,7 @@ body {
 }
 @keyframes fill-bar-copywriting {
   from {
-    width: 20%;
+    width: 26%;
   }
   to {
     width: 75%;
@@ -606,7 +671,7 @@ body {
   height: 100%;
   background-color: #f33b00;
   color: white;
-  font-weight: 700;
+  font-weight: 500;
   border-radius: 10px;
   padding: 10px;
   animation: fill-bar-office 6s infinite;
@@ -628,7 +693,7 @@ body {
   margin-bottom: 20px;
 }
 #skills i {
-  color: #4a63e7;
+  color: #ffc62b;
 }
 #skills h3 {
   margin-top: 10px;
@@ -644,29 +709,29 @@ body {
 }
 .soft-skills-container .soft-skill {
   padding: 8px;
-  background-color: #ff5959;
+  background-color: #ffc62b;
   color: white;
   border-radius: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 #skills .quote {
-  border-top: 2px solid rgb(233, 233, 233);
   text-align: center;
+  font-weight: 500;
 }
 /*Fifth card (My Projects)*/
 #my-projects {
-  color: black;
+  color: white;
   margin-top: 20px;
   margin-left: 10px;
   width: 80%;
   height: 100%;
   padding: 20px;
-  box-shadow: 0px 0px 20px rgb(214, 214, 214);
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
   border-radius: 20px;
 }
 #my-projects h2 {
-  border-bottom: 4px solid #ff5959;
+  border-bottom: 4px solid #ffc62b;
   width: 180px;
 }
 #my-projects h3 img {
@@ -720,13 +785,20 @@ body {
 }
 #subtitle-draw a {
   text-decoration: none;
-  color: #4a63e7;
+  color: #ffc62b;
+}
+#subtitle-draw a:hover {
+  transition: 0.4s;
+  color: white;
+  background-color: midnightblue;
+  padding: 2px;
+  border-radius: 4px;
 }
 .card {
   width: 200px;
   height: 200px;
   border-radius: 20px;
-  box-shadow: 0px 0px 20px rgb(214, 214, 214);
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -740,21 +812,23 @@ body {
   font-weight: 500;
   padding: 4px;
   text-align: center;
-  color: black;
+  color: white;
 }
 .card a {
   text-decoration: none;
   color: white;
-  background-color: #ff5959;
+  background-color: #ffc62b;
   box-shadow: 0px 0px 10px rgba(31, 31, 31, 0.253);
   padding: 10px;
   border-radius: 30px;
   vertical-align: middle;
+  font-weight: 500;
 }
 .card a:hover {
   transform: scale(1.1);
   transition: 0.4s;
   background-color: midnightblue;
+  color: white;
 }
 .card-caption-pepsi {
   font-weight: 500;
@@ -783,22 +857,22 @@ body {
 
 .card-caption-draw {
   color: white;
-  text-shadow: 0px 2px 2px #ff5959;
+  text-shadow: 0px 2px 2px midnightblue;
   text-align: center;
 }
 /*Sixth card (Contact me)*/
 #contact-me {
-  color: black;
+  color: white;
   margin-top: 20px;
   margin-left: 10px;
   width: 80%;
   height: 100%;
   padding: 20px;
-  box-shadow: 0px 0px 20px rgb(214, 214, 214);
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
   border-radius: 20px;
 }
 #contact-me h2 {
-  border-bottom: 4px solid #ff5959;
+  border-bottom: 4px solid #ffc62b;
   width: 180px;
 }
 .contact-me-container {
@@ -824,6 +898,9 @@ body {
   align-items: center;
   gap: 50px;
 }
+#qr-code {
+  border-radius: 10px;
+}
 .contact-me-form figure {
   display: flex;
   flex-direction: column;
@@ -833,7 +910,7 @@ input[type="submit"] {
   border: none;
   border-radius: 30px;
   padding: 8px;
-  background-color: #ff5959;
+  background-color: #ffc62b;
   color: white;
   cursor: pointer;
 }
@@ -859,13 +936,13 @@ footer {
   text-align: center;
   font-size: 10px;
   width: 80%;
-  color: rgb(112, 112, 112);
+  color: rgb(168, 168, 168);
 }
 footer a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: 700;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 /*media query*/
 @media (max-width: 1600px) {
@@ -912,14 +989,12 @@ footer a {
     width: 80%;
     height: 640px;
     border-radius: 20px;
-    background-color: #4a63e7;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     line-height: 40px;
-    box-shadow: 0px 0px 20px rgb(214, 214, 214);
     position: relative;
   }
   .container-main-center {
