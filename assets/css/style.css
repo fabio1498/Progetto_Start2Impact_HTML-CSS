@@ -351,7 +351,7 @@ body {
   animation: gradient-animation 8s ease infinite;
 }
 #start-2-impact {
-  background: linear-gradient(110deg, #09d424, #998f06);
+  background: linear-gradient(110deg, #09d424, #069912);
   background-size: 180% 180%;
   animation: gradient-animation 8s ease infinite;
 }
