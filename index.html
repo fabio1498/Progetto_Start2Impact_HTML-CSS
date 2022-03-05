@@ -164,7 +164,7 @@
               friends
             </p>
           </div>
-          <h3>Socials</h3>
+          <h3>Personal links</h3>
           <div class="about-me-socials">
             <a
               id="ig-prvt"
@@ -198,6 +198,12 @@
                 src="https://img.icons8.com/ios-glyphs/20/ffffff/linkedin.png"
                 alt="linkedin-icon"
               />LinkedIn</a
+            >
+            <a
+              href="https://talent.start2impact.it/profile/fabio-cocozza"
+              target="_blank"
+              id="start-2-impact"
+              >Start2Impact profile</a
             >
           </div>
           <h3>Personal info's</h3>
@@ -347,6 +353,57 @@
                   class="diploma-logo"
                 />Studying UX/UI design on Start2Impact
               </p>
+              <div class="more_s2i reveal">
+                <h5>Percorso</h5>
+                <div class="percorso_s2i">
+                  <a href="#s2icopywrt">
+                    <img
+                      src="assets/img/Copywriting__1_.png"
+                      class="completed"
+                      title="Copywriting"
+                  /></a>
+                  <a href="#s2igraphic">
+                    <img
+                      src="assets/img/Grafica.png"
+                      class="completed"
+                      title="Grafica"
+                  /></a>
+                  <a href="#s2ihtml">
+                    <img
+                      src="assets/img/HTML.png"
+                      class="completed"
+                      title="HTML & CSS"
+                  /></a>
+                  <a href="#s2idiscovery">
+                    <img
+                      src="assets/img/Discovery.png"
+                      class="completed"
+                      title="Discovery"
+                  /></a>
+
+                  <img
+                    src="assets/img/Wireframing.png"
+                    class="tocomplete"
+                    title="Wireframing"
+                  />
+                  <br />
+                  <img
+                    src="assets/img/User_Interface.png"
+                    class="tocomplete"
+                    title="User interface"
+                  />
+                  <img
+                    src="assets/img/User_testing.png"
+                    class="tocomplete"
+                    title="User testing"
+                  />
+                  <img
+                    src="assets/img/Progetto_finale__2_.png"
+                    class="tocomplete"
+                    title="Progetto finale"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -509,7 +566,9 @@
           </h3>
           <div class="container-s2i">
             <div class="card">
-              <span class="card-caption">Progetto copywriting</span>
+              <span class="card-caption" id="s2icopywrt"
+                >Progetto copywriting</span
+              >
               <a
                 href="assets/download/progetto_copywriting_fabio_cocozza.pdf"
                 download
@@ -519,7 +578,7 @@
               /></a>
             </div>
             <div class="card">
-              <span class="card-caption">Progetto grafica</span>
+              <span class="card-caption" id="s2igraphic">Progetto grafica</span>
               <a
                 href="assets/download/progetto_grafica_fabio_cocozza.pdf"
                 download
@@ -529,9 +588,21 @@
               /></a>
             </div>
             <div class="card">
-              <span class="card-caption">Progetto HTML e CSS</span>
+              <span class="card-caption" id="s2ihtml">Progetto HTML e CSS</span>
               <a
                 href="assets/download/progetto_html_css_fabio_cocozza.pdf"
+                download
+                ><img
+                  src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
+                  alt="download-button"
+              /></a>
+            </div>
+            <div class="card">
+              <span class="card-caption" id="s2idiscovery"
+                >Progetto discovery pt.1 (analisi as is e ricerca utente)</span
+              >
+              <a
+                href="assets/download/progetto_discovery_pt1_fabio_cocozza.pdf"
                 download
                 ><img
                   src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
@@ -797,6 +868,8 @@
 
           if (revealtop < windowheight - revealpoint) {
             reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
           }
         }
       }

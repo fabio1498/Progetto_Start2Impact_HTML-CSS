@@ -350,6 +350,11 @@ body {
   background-size: 180% 180%;
   animation: gradient-animation 8s ease infinite;
 }
+#start-2-impact {
+  background: linear-gradient(110deg, #09d424, #998f06);
+  background-size: 180% 180%;
+  animation: gradient-animation 8s ease infinite;
+}
 .about-me-socials #ig-prvt:hover::after {
   content: ": fabio._.c";
 }
@@ -484,12 +489,38 @@ body {
   background-color: #0a0a23;
 }
 .s2impact {
-  background-color: rgb(9, 219, 44);
+  background-color: rgb(10, 10, 10);
+  margin-bottom: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: 0px 0px 0px rgb(0, 0, 0);
 }
 .diploma-logo {
   width: 30px;
   vertical-align: middle;
   margin-right: 10px;
+}
+.more_s2i {
+  position: relative;
+  padding: 8px;
+  background-color: rgb(10, 10, 10);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.percorso_s2i img {
+  width: 40px;
+  border-radius: 30px;
+  margin-right: 4px;
+}
+.percorso_s2i img:hover {
+  transform: scale(1.1);
+  transition: 0.1s ease-in;
+}
+.percorso_s2i .completed {
+  border: 4px solid #1bc75b;
+}
+.percorso_s2i .tocomplete {
+  opacity: 50%;
 }
 /*Fourth card content (Skills) */
 #skills {
