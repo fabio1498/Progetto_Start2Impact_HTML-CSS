@@ -16,847 +16,873 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <div class="container-left-menu">
-      <div class="container-left">
-        <!--Left menu-->
-        <a
-          id="full-size-imgprofile"
-          href="assets/img/1503543419933.JPG"
-          target="_blank"
-          ><img
-            src="https://img.icons8.com/ios-filled/20/ffffff/full-screen.png"
-            alt="full-size-image-profile"
-        /></a>
-        <img
-          id="image-profile"
-          src="assets/img/1503543419933.JPG"
-          alt="profile-image"
-        />
-        <h1>Fabio Cocozza</h1>
-        <h2>Designer</h2>
-        <a href="#home">
+  <body onload="myFunction()" style="margin: 0">
+    <div id="loader"></div>
+    <div style="display: none" id="myDiv" class="animate-bottom">
+      <div class="container-left-menu">
+        <div class="container-left">
+          <!--Left menu-->
+          <a
+            id="full-size-imgprofile"
+            href="assets/img/1503543419933.JPG"
+            target="_blank"
+            ><img
+              src="https://img.icons8.com/ios-filled/20/ffffff/full-screen.png"
+              alt="full-size-image-profile"
+          /></a>
           <img
-            src="https://img.icons8.com/material-rounded/20/ffffff/home.png"
-            alt="home-icon"
+            id="image-profile"
+            src="assets/img/1503543419933.JPG"
+            alt="profile-image"
           />
-          Home
-        </a>
-        <a href="#about-me">
-          <img
-            src="https://img.icons8.com/ios-glyphs/20/ffffff/about.png"
-            alt="about-me-icon"
-          />
-          About me
-        </a>
-        <a href="#resume">
-          <img
-            src="https://img.icons8.com/ios-filled/20/ffffff/resume.png"
-            alt="resume-icon"
-          />
-          Resume
-        </a>
-        <a href="#skills">
-          <img
-            src="https://img.icons8.com/ios-filled/20/ffffff/star--v1.png"
-            alt="star-icon"
-          />
-          Skills
-        </a>
-        <a href="#my-projects">
-          <img
-            src="https://img.icons8.com/ios-filled/20/ffffff/portfolio.png"
-            alt="projects-icon"
-          />
-          My projects and draws</a
-        >
-        <a href="#contact-me">
-          <img
-            src="https://img.icons8.com/ios-filled/20/ffffff/phone.png"
-            alt="telephone-icon"
-          />
-          Contact me</a
-        >
-      </div>
-    </div>
-    <!--Main central section-->
-    <div class="container-main-center">
-      <div id="home">
-        <div class="home-content">
-          <h1>
-            Hi<span style="color: #ff0046">!</span
-            ><span class="hand">👋🏻</span> I'm Fabio Cocozza <br />Welcome to my
-            portfolio<span style="color: #ff0046">.</span>
-          </h1>
-          <p>
-            I'm an italian designer, currently studying UX/UI design on
-            <a class="s2i" href="https://www.start2impact.it/" target="_blank"
-              >Start2Impact</a
-            >. I'm passionate about improving the lives of others through design
-            and I'am constantly looking to learn new things everyday.
-          </p>
-          <span class="scroll-down"
-            >Scroll down to know me better
+          <h1>Fabio Cocozza</h1>
+          <h2>Designer</h2>
+          <a href="#home">
             <img
-              class="arrow-down"
-              src="https://img.icons8.com/material-outlined/20/ffffff/expand-arrow--v1.png"
-              alt="arrowdown-icon"
+              src="https://img.icons8.com/material-rounded/20/ffffff/home.png"
+              alt="home-icon"
             />
-          </span>
+            Home
+          </a>
+          <a href="#about-me">
+            <img
+              src="https://img.icons8.com/ios-glyphs/20/ffffff/about.png"
+              alt="about-me-icon"
+            />
+            About me
+          </a>
+          <a href="#resume">
+            <img
+              src="https://img.icons8.com/ios-filled/20/ffffff/resume.png"
+              alt="resume-icon"
+            />
+            Resume
+          </a>
+          <a href="#skills">
+            <img
+              src="https://img.icons8.com/ios-filled/20/ffffff/star--v1.png"
+              alt="star-icon"
+            />
+            Skills
+          </a>
+          <a href="#my-projects">
+            <img
+              src="https://img.icons8.com/ios-filled/20/ffffff/portfolio.png"
+              alt="projects-icon"
+            />
+            My projects and draws</a
+          >
+          <a href="#contact-me">
+            <img
+              src="https://img.icons8.com/ios-filled/20/ffffff/phone.png"
+              alt="telephone-icon"
+            />
+            Contact me</a
+          >
         </div>
       </div>
-      <!--About me-->
-      <div id="about-me" class="reveal">
-        <h2>About me <span class="snowflake">❄️</span></h2>
-        <div class="about-me-content">
-          <img src="assets/img/Memoji_2.png" alt="memoji" id="memoji" />
-          <h3>Bio</h3>
-          <p>
-            In the recent years I've started to learn the basics of web and
-            mobile design, starting with HTML/CSS. Thanks to academy like
-            <a href="https://www.freecodecamp.org/" target="_blank"
-              >FreeCodeCamp</a
-            >
-            and
-            <a href="https://accademiadomani.it/" target="_blank"
-              >AccademiaDomani</a
-            >
-            I learned a lot about this role. Having understood how much the
-            design is crucial in a website or in an app, I started to get
-            interested in UX/UI design: this brought me to learn to use Figma
-            and Adobe XD. Now I'm ready to learn everything about UX/UI design,
-            and I've choosed the best italian online academy for UX/UI design:
-            <a href="https://www.start2impact.it/" target="_blank"
-              >Start2Impact</a
-            >.
-          </p>
-          <h3>Hobbies</h3>
-          <div class="about-me-hobbies">
+      <!--Main central section-->
+      <div class="container-main-center">
+        <div id="home">
+          <div class="home-content">
+            <h1>
+              Hi<span style="color: #ff0046">!</span
+              ><span class="hand">👋🏻</span> I'm Fabio Cocozza <br />Welcome to
+              my portfolio<span style="color: #ff0046">.</span>
+            </h1>
             <p>
-              <img src="assets/img/icons8-ciak.gif" alt="film-icon" />Film&Tv
-              Shows
+              I'm an italian designer, currently studying UX/UI design on
+              <a class="s2i" href="https://www.start2impact.it/" target="_blank"
+                >Start2Impact</a
+              >. I'm passionate about improving the lives of others through
+              design and I'am constantly looking to learn new things everyday.
             </p>
-            <p>
+            <span class="scroll-down"
+              >Scroll down to know me better
               <img
-                src="assets/img/icons8-libreria-musicale.gif"
-                alt="music-icon"
-              />Listen music
-            </p>
-            <p>
-              <img
-                src="assets/img/icons8-razzo-lanciato.gif"
-                alt="videogame-icon"
-              />Play videogames
-            </p>
-            <p>
-              <img src="assets/img/icons8-fiat-500.gif" alt="car-icon" />Watch
-              motorsport
-            </p>
-            <p>
-              <img
-                src="assets/img/icons8-calcio-2.gif"
-                alt="soccerball-icon"
-                id="soccer-ball"
-              />Watch soccer matches
-            </p>
-            <p>
-              <img src="assets/img/dance.gif" alt="people-icon" />Hangout with
-              friends
-            </p>
-          </div>
-          <h3>Personal links</h3>
-          <div class="about-me-socials">
-            <a
-              id="ig-prvt"
-              href="https://www.instagram.com/fabio._.c/"
-              target="_blank"
-              ><img
-                src="https://img.icons8.com/material-rounded/20/ffffff/instagram-new.png"
-                alt="instragram-icon"
-              />Instagram private</a
-            >
-            <a
-              id="ig-ux"
-              href="https://www.instagram.com/unknown.designer_/"
-              target="_blank"
-              ><img
-                src="https://img.icons8.com/material-rounded/20/ffffff/instagram-new.png"
-                alt="instagram-icon"
-              />Instagram design page</a
-            >
-            <a href="https://github.com/fabio1498" target="_blank" id="git-hub"
-              ><img
-                src="https://img.icons8.com/material-outlined/20/ffffff/github.png"
-                alt="github-icon"
-              />GitHub</a
-            >
-            <a
-              href="https://www.linkedin.com/in/fabio-cocozza1498-/"
-              target="_blank"
-              id="linked-in"
-              ><img
-                src="https://img.icons8.com/ios-glyphs/20/ffffff/linkedin.png"
-                alt="linkedin-icon"
-              />LinkedIn</a
-            >
-            <a
-              href="https://talent.start2impact.it/profile/fabio-cocozza"
-              target="_blank"
-              id="start-2-impact"
-              ><img
-                src="assets/img/s2i_logo_white.png"
-                alt="linkedin-icon"
-                style="width: 20px; margin-right: 4px"
-              />Start2Impact profile</a
-            >
-          </div>
-          <h3>Personal info's</h3>
-          <div class="about-me-personal-info">
-            <ul>
-              <li>
-                <img
-                  src="https://img.icons8.com/ios-filled/20/ffffff/birthday.png"
-                  alt="cakebirthday-icon"
-                />
-                Birthday: 08/06/1998
-              </li>
-              <li>
-                <img
-                  src="https://img.icons8.com/ios-filled/20/ffffff/marker.png"
-                  alt="position-icon"
-                />
-                Location:
-                <a href="https://goo.gl/maps/qLnoUbd4kHQeAHtz5" target="_blank"
-                  >Venafro, Italy</a
-                >
-              </li>
-            </ul>
+                class="arrow-down"
+                src="https://img.icons8.com/material-outlined/20/ffffff/expand-arrow--v1.png"
+                alt="arrowdown-icon"
+              />
+            </span>
           </div>
         </div>
-      </div>
-      <!--Resume-->
-      <div id="resume" class="reveal">
-        <h2>
-          Resume
-          <img
-            src="https://img.icons8.com/ios-filled/20/ffffff/resume.png"
-            alt="resume-icon"
-          />
-        </h2>
-        <h4>
-          Download CV👉
-          <a href="assets/download/curriculum_fabio_cocozza.pdf" download
-            ><img
-              src="https://img.icons8.com/fluency/20/000000/italy-circular.png"
-              alt="italian_cv_download"
-          /></a>
-          <a href="assets/download/curriculum_fabio_cocozza_eng.pdf" download
-            ><img
-              src="https://img.icons8.com/color/20/000000/great-britain-circular.png"
-              alt="english_cv_download"
-          /></a>
-        </h4>
-
-        <div class="resume-container">
-          <div class="container">
-            <div class="date reveal">
-              <span class="timeline-vertical"></span>
-              <p class="year reveal">2012 - 2017</p>
-              <p class="year reveal">11/2020</p>
-              <p class="year reveal">11/2020</p>
-              <p class="year reveal">01/2021</p>
-              <p class="year reveal">02/2021</p>
-              <p class="year reveal">03/2021</p>
-              <p class="year reveal">From 08/2021</p>
+        <!--About me-->
+        <div id="about-me" class="reveal">
+          <h2>About me <span class="snowflake">❄️</span></h2>
+          <div class="about-me-content">
+            <img src="assets/img/Memoji_2.png" alt="memoji" id="memoji" />
+            <h3>Bio</h3>
+            <p>
+              In the recent years I've started to learn the basics of web and
+              mobile design, starting with HTML/CSS. Thanks to academy like
+              <a href="https://www.freecodecamp.org/" target="_blank"
+                >FreeCodeCamp</a
+              >
+              and
+              <a href="https://accademiadomani.it/" target="_blank"
+                >AccademiaDomani</a
+              >
+              I learned a lot about this role. Having understood how much the
+              design is crucial in a website or in an app, I started to get
+              interested in UX/UI design: this brought me to learn to use Figma
+              and Adobe XD. Now I'm ready to learn everything about UX/UI
+              design, and I've choosed the best italian online academy for UX/UI
+              design:
+              <a href="https://www.start2impact.it/" target="_blank"
+                >Start2Impact</a
+              >.
+            </p>
+            <h3>Hobbies</h3>
+            <div class="about-me-hobbies">
+              <p>
+                <img src="assets/img/icons8-ciak.gif" alt="film-icon" />Film&Tv
+                Shows
+              </p>
+              <p>
+                <img
+                  src="assets/img/icons8-libreria-musicale.gif"
+                  alt="music-icon"
+                />Listen music
+              </p>
+              <p>
+                <img
+                  src="assets/img/icons8-razzo-lanciato.gif"
+                  alt="videogame-icon"
+                />Play videogames
+              </p>
+              <p>
+                <img src="assets/img/icons8-fiat-500.gif" alt="car-icon" />Watch
+                motorsport
+              </p>
+              <p>
+                <img
+                  src="assets/img/icons8-calcio-2.gif"
+                  alt="soccerball-icon"
+                  id="soccer-ball"
+                />Watch soccer matches
+              </p>
+              <p>
+                <img src="assets/img/dance.gif" alt="people-icon" />Hangout with
+                friends
+              </p>
             </div>
-            <div class="degree reveal">
-              <p class="diploma reveal">Diploma liceo classico</p>
-              <p class="diploma ef-set reveal">
-                <img
-                  src="assets/img/std8EVXe_400x400.jpg"
-                  alt="fcc_logo"
-                  class="diploma-logo"
-                />EF Set - English C1 advanced
-                <a href="assets/download/ef_set_certificate.pdf" download
-                  ><img
-                    src="https://img.icons8.com/material-rounded/20/00000/download--v1.png"
-                    alt="download-button"
-                /></a>
-              </p>
-              <p class="diploma accdm reveal">
-                <img
-                  src="assets/img/50224033_1481688421965685_1882460758265036800_n.png"
-                  alt="fcc_logo"
-                  class="diploma-logo"
-                />
-                AccademiaDomani - Web designer
-                <a
-                  href="assets/download/accademia_domani_web_designer.pdf"
-                  download
-                  ><img
-                    src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
-                    alt="download-button"
-                /></a>
-              </p>
-              <p class="diploma accdm reveal">
-                <img
-                  src="assets/img/50224033_1481688421965685_1882460758265036800_n.png"
-                  alt="fcc_logo"
-                  class="diploma-logo"
-                />
-                AccademiaDomani - WordPress basics
-                <a
-                  href="assets/download/accademia_domani_wordpress.pdf"
-                  download
-                  ><img
-                    src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
-                    alt="download-button"
-                /></a>
-              </p>
-              <p class="diploma ibmi reveal">
-                <img
-                  src="assets/img/logo-large4.png"
-                  alt="fcc_logo"
-                  class="diploma-logo"
-                />
-                I.B.M.I - Design thinking
-                <a
-                  href="assets/download/design_thinking_certificate_fabio_cococozza.pdf"
-                  download
-                  ><img
-                    src="https://img.icons8.com/material-rounded/20/00000/download--v1.png"
-                    alt="download-button"
-                /></a>
-              </p>
-              <p class="diploma fcc reveal">
-                <img
-                  src="assets/img/fcc_primary_small.svg"
-                  alt="fcc_logo"
-                  class="diploma-logo"
-                />
-                FreeCodeCamp - Responsive web design
-                <a
-                  href="assets/download/freecodecamp_responsive_web_design_certificate_fabio_cocozza.pdf"
-                  download
-                  ><img
-                    src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
-                    alt="download-button"
-                /></a>
-                <a
-                  href="https://www.freecodecamp.org/certification/fabiococozza/responsive-web-design"
-                  target="_blank"
-                  ><img
-                    src="https://img.icons8.com/ios-glyphs/20/ffffff/visible--v1.png"
-                    alt="look-icon"
-                /></a>
-              </p>
-              <p class="diploma s2impact reveal">
-                <img
-                  src="assets/img/s2i_logo.png"
-                  alt="s2i_logo"
-                  class="diploma-logo"
-                />Studying UX/UI design on Start2Impact
-              </p>
-              <div class="more_s2i reveal">
-                <h5>Percorso</h5>
-                <div class="percorso_s2i">
-                  <a href="#s2icopywrt">
-                    <img
-                      src="assets/img/Copywriting__1_.png"
-                      class="completed"
-                      title="Copywriting"
-                  /></a>
-                  <a href="#s2igraphic">
-                    <img
-                      src="assets/img/Grafica.png"
-                      class="completed"
-                      title="Grafica"
-                  /></a>
-                  <a href="#s2ihtml">
-                    <img
-                      src="assets/img/HTML.png"
-                      class="completed"
-                      title="HTML & CSS"
-                  /></a>
-                  <a href="#s2idiscovery">
-                    <img
-                      src="assets/img/Discovery.png"
-                      class="completed"
-                      title="Discovery"
-                  /></a>
+            <h3>Personal links</h3>
+            <div class="about-me-socials">
+              <a
+                id="ig-prvt"
+                href="https://www.instagram.com/fabio._.c/"
+                target="_blank"
+                ><img
+                  src="https://img.icons8.com/material-rounded/20/ffffff/instagram-new.png"
+                  alt="instragram-icon"
+                />Instagram private</a
+              >
+              <a
+                id="ig-ux"
+                href="https://www.instagram.com/unknown.designer_/"
+                target="_blank"
+                ><img
+                  src="https://img.icons8.com/material-rounded/20/ffffff/instagram-new.png"
+                  alt="instagram-icon"
+                />Instagram design page</a
+              >
+              <a
+                href="https://github.com/fabio1498"
+                target="_blank"
+                id="git-hub"
+                ><img
+                  src="https://img.icons8.com/material-outlined/20/ffffff/github.png"
+                  alt="github-icon"
+                />GitHub</a
+              >
+              <a
+                href="https://www.linkedin.com/in/fabio-cocozza1498-/"
+                target="_blank"
+                id="linked-in"
+                ><img
+                  src="https://img.icons8.com/ios-glyphs/20/ffffff/linkedin.png"
+                  alt="linkedin-icon"
+                />LinkedIn</a
+              >
+              <a
+                href="https://talent.start2impact.it/profile/fabio-cocozza"
+                target="_blank"
+                id="start-2-impact"
+                ><img
+                  src="assets/img/s2i_logo_white.png"
+                  alt="linkedin-icon"
+                  style="width: 20px; margin-right: 4px"
+                />Start2Impact profile</a
+              >
+            </div>
+            <h3>Personal info's</h3>
+            <div class="about-me-personal-info">
+              <ul>
+                <li>
+                  <img
+                    src="https://img.icons8.com/ios-filled/20/ffffff/birthday.png"
+                    alt="cakebirthday-icon"
+                  />
+                  Birthday: 08/06/1998
+                </li>
+                <li>
+                  <img
+                    src="https://img.icons8.com/ios-filled/20/ffffff/marker.png"
+                    alt="position-icon"
+                  />
+                  Location:
+                  <a
+                    href="https://goo.gl/maps/qLnoUbd4kHQeAHtz5"
+                    target="_blank"
+                    >Venafro, Italy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--Resume-->
+        <div id="resume" class="reveal">
+          <h2>
+            Resume
+            <img
+              src="https://img.icons8.com/ios-filled/20/ffffff/resume.png"
+              alt="resume-icon"
+            />
+          </h2>
+          <h4>
+            Download CV👉
+            <a href="assets/download/curriculum_fabio_cocozza.pdf" download
+              ><img
+                src="https://img.icons8.com/fluency/20/000000/italy-circular.png"
+                alt="italian_cv_download"
+            /></a>
+            <a href="assets/download/curriculum_fabio_cocozza_eng.pdf" download
+              ><img
+                src="https://img.icons8.com/color/20/000000/great-britain-circular.png"
+                alt="english_cv_download"
+            /></a>
+          </h4>
 
+          <div class="resume-container">
+            <div class="container">
+              <div class="date reveal">
+                <span class="timeline-vertical"></span>
+                <p class="year reveal">2012 - 2017</p>
+                <p class="year reveal">11/2020</p>
+                <p class="year reveal">11/2020</p>
+                <p class="year reveal">01/2021</p>
+                <p class="year reveal">02/2021</p>
+                <p class="year reveal">03/2021</p>
+                <p class="year reveal">From 08/2021</p>
+              </div>
+              <div class="degree reveal">
+                <p class="diploma reveal">Diploma liceo classico</p>
+                <p class="diploma ef-set reveal">
                   <img
-                    src="assets/img/Wireframing.png"
-                    class="tocomplete"
-                    title="Wireframing"
-                  />
-                  <br />
+                    src="assets/img/std8EVXe_400x400.jpg"
+                    alt="fcc_logo"
+                    class="diploma-logo"
+                  />EF Set - English C1 advanced
+                  <a href="assets/download/ef_set_certificate.pdf" download
+                    ><img
+                      src="https://img.icons8.com/material-rounded/20/00000/download--v1.png"
+                      alt="download-button"
+                  /></a>
+                </p>
+                <p class="diploma accdm reveal">
                   <img
-                    src="assets/img/User_Interface.png"
-                    class="tocomplete"
-                    title="User interface"
+                    src="assets/img/50224033_1481688421965685_1882460758265036800_n.png"
+                    alt="fcc_logo"
+                    class="diploma-logo"
                   />
+                  AccademiaDomani - Web designer
+                  <a
+                    href="assets/download/accademia_domani_web_designer.pdf"
+                    download
+                    ><img
+                      src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
+                      alt="download-button"
+                  /></a>
+                </p>
+                <p class="diploma accdm reveal">
                   <img
-                    src="assets/img/User_testing.png"
-                    class="tocomplete"
-                    title="User testing"
+                    src="assets/img/50224033_1481688421965685_1882460758265036800_n.png"
+                    alt="fcc_logo"
+                    class="diploma-logo"
                   />
+                  AccademiaDomani - WordPress basics
+                  <a
+                    href="assets/download/accademia_domani_wordpress.pdf"
+                    download
+                    ><img
+                      src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
+                      alt="download-button"
+                  /></a>
+                </p>
+                <p class="diploma ibmi reveal">
                   <img
-                    src="assets/img/Progetto_finale__2_.png"
-                    class="tocomplete"
-                    title="Progetto finale"
+                    src="assets/img/logo-large4.png"
+                    alt="fcc_logo"
+                    class="diploma-logo"
                   />
+                  I.B.M.I - Design thinking
+                  <a
+                    href="assets/download/design_thinking_certificate_fabio_cococozza.pdf"
+                    download
+                    ><img
+                      src="https://img.icons8.com/material-rounded/20/00000/download--v1.png"
+                      alt="download-button"
+                  /></a>
+                </p>
+                <p class="diploma fcc reveal">
+                  <img
+                    src="assets/img/fcc_primary_small.svg"
+                    alt="fcc_logo"
+                    class="diploma-logo"
+                  />
+                  FreeCodeCamp - Responsive web design
+                  <a
+                    href="assets/download/freecodecamp_responsive_web_design_certificate_fabio_cocozza.pdf"
+                    download
+                    ><img
+                      src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
+                      alt="download-button"
+                  /></a>
+                  <a
+                    href="https://www.freecodecamp.org/certification/fabiococozza/responsive-web-design"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/ios-glyphs/20/ffffff/visible--v1.png"
+                      alt="look-icon"
+                  /></a>
+                </p>
+                <p class="diploma s2impact reveal">
+                  <img
+                    src="assets/img/s2i_logo.png"
+                    alt="s2i_logo"
+                    class="diploma-logo"
+                  />Studying UX/UI design on Start2Impact
+                </p>
+                <div class="more_s2i reveal">
+                  <h5>Percorso</h5>
+                  <div class="percorso_s2i">
+                    <a href="#s2icopywrt">
+                      <img
+                        src="assets/img/Copywriting__1_.png"
+                        class="completed"
+                        title="Copywriting"
+                    /></a>
+                    <a href="#s2igraphic">
+                      <img
+                        src="assets/img/Grafica.png"
+                        class="completed"
+                        title="Grafica"
+                    /></a>
+                    <a href="#s2ihtml">
+                      <img
+                        src="assets/img/HTML.png"
+                        class="completed"
+                        title="HTML & CSS"
+                    /></a>
+                    <a href="#s2idiscovery">
+                      <img
+                        src="assets/img/Discovery.png"
+                        class="completed"
+                        title="Discovery"
+                    /></a>
+
+                    <img
+                      src="assets/img/Wireframing.png"
+                      class="tocomplete"
+                      title="Wireframing"
+                    />
+                    <br />
+                    <img
+                      src="assets/img/User_Interface.png"
+                      class="tocomplete"
+                      title="User interface"
+                    />
+                    <img
+                      src="assets/img/User_testing.png"
+                      class="tocomplete"
+                      title="User testing"
+                    />
+                    <img
+                      src="assets/img/Progetto_finale__2_.png"
+                      class="tocomplete"
+                      title="Progetto finale"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!--Skills-->
-      <div id="skills" class="reveal">
-        <h2>
-          Skills
-          <img
-            src="https://img.icons8.com/ios-filled/20/ffffff/star--v1.png"
-            alt="star-icon"
-          />
-        </h2>
-        <!--Software skills-->
-        <h3>Software skills</h3>
-        <div class="skills-container">
-          <div class="skill">
+        <!--Skills-->
+        <div id="skills" class="reveal">
+          <h2>
+            Skills
             <img
-              src="https://img.icons8.com/color/50/000000/html-5--v1.png"
-              alt="html-icon"
+              src="https://img.icons8.com/ios-filled/20/ffffff/star--v1.png"
+              alt="star-icon"
             />
-            <div class="html-css-bar">
-              <span>HTML</span><span class="percentage">75%</span>
+          </h2>
+          <!--Software skills-->
+          <h3>Software skills</h3>
+          <div class="skills-container">
+            <div class="skill">
+              <img
+                src="https://img.icons8.com/color/50/000000/html-5--v1.png"
+                alt="html-icon"
+              />
+              <div class="html-css-bar">
+                <span>HTML</span><span class="percentage">75%</span>
+              </div>
+            </div>
+            <div class="skill">
+              <img
+                src="https://img.icons8.com/color/50/000000/css3.png"
+                alt="css-icon"
+              />
+              <div class="html-css-bar" style="background-color: #3bb2e0">
+                <span>CSS </span><span class="percentage">75%</span>
+              </div>
+            </div>
+            <div class="skill">
+              <img src="assets/img/icons8-figma.gif" alt="figma-icon" />
+              <div class="figma-bar">
+                <span>Figma</span><span class="percentage">85%</span>
+              </div>
+            </div>
+            <div class="skill">
+              <img src="assets/img/icons8-adobe-xd.gif" alt="adobe-xd-icon" />
+              <div class="xd-bar">
+                <span>AdobeXD</span><span class="percentage">80%</span>
+              </div>
+            </div>
+            <div class="skill">
+              <img
+                src="assets/img/icons8-adobe-photoshop.gif"
+                alt="photoshop-icon"
+              />
+              <div class="photoshop-bar">
+                <span>Photoshop</span><span class="percentage">65%</span>
+              </div>
+            </div>
+            <div class="skill">
+              <img
+                src="assets/img/icons8-adobe-illustrator.gif"
+                alt="illustrator-icon"
+              />
+              <div class="illustrator-bar">
+                <span>Illustrator</span><span class="percentage">75%</span>
+              </div>
+            </div>
+            <div class="skill">
+              <img src="assets/img/draw.gif" alt="copywriting-icon" />
+              <div class="copywriting-bar">
+                <span>Copywriting</span><span class="percentage">85%</span>
+              </div>
+            </div>
+            <div class="skill">
+              <img
+                src="https://img.icons8.com/color/50/000000/office-365.png"
+                alt="office-icon"
+              />
+              <div class="office-bar">
+                <span>Office</span><span class="percentage">70%</span>
+              </div>
+            </div>
+            <!--Soft skills -->
+            <h3>Soft skills</h3>
+            <div class="soft-skills-container">
+              <span class="soft-skill">Flexibility</span>
+              <span class="soft-skill">Patience</span>
+              <span class="soft-skill">Communication</span>
+              <span class="soft-skill">Time management</span>
             </div>
           </div>
-          <div class="skill">
-            <img
-              src="https://img.icons8.com/color/50/000000/css3.png"
-              alt="css-icon"
-            />
-            <div class="html-css-bar" style="background-color: #3bb2e0">
-              <span>CSS </span><span class="percentage">75%</span>
-            </div>
-          </div>
-          <div class="skill">
-            <img src="assets/img/icons8-figma.gif" alt="figma-icon" />
-            <div class="figma-bar">
-              <span>Figma</span><span class="percentage">85%</span>
-            </div>
-          </div>
-          <div class="skill">
-            <img src="assets/img/icons8-adobe-xd.gif" alt="adobe-xd-icon" />
-            <div class="xd-bar">
-              <span>AdobeXD</span><span class="percentage">80%</span>
-            </div>
-          </div>
-          <div class="skill">
-            <img
-              src="assets/img/icons8-adobe-photoshop.gif"
-              alt="photoshop-icon"
-            />
-            <div class="photoshop-bar">
-              <span>Photoshop</span><span class="percentage">65%</span>
-            </div>
-          </div>
-          <div class="skill">
-            <img
-              src="assets/img/icons8-adobe-illustrator.gif"
-              alt="illustrator-icon"
-            />
-            <div class="illustrator-bar">
-              <span>Illustrator</span><span class="percentage">75%</span>
-            </div>
-          </div>
-          <div class="skill">
-            <img src="assets/img/draw.gif" alt="copywriting-icon" />
-            <div class="copywriting-bar">
-              <span>Copywriting</span><span class="percentage">85%</span>
-            </div>
-          </div>
-          <div class="skill">
-            <img
-              src="https://img.icons8.com/color/50/000000/office-365.png"
-              alt="office-icon"
-            />
-            <div class="office-bar">
-              <span>Office</span><span class="percentage">70%</span>
-            </div>
-          </div>
-          <!--Soft skills -->
-          <h3>Soft skills</h3>
-          <div class="soft-skills-container">
-            <span class="soft-skill">Flexibility</span>
-            <span class="soft-skill">Patience</span>
-            <span class="soft-skill">Communication</span>
-            <span class="soft-skill">Time management</span>
+          <div class="quote">
+            <p>
+              I'm looking forward to always improve my skills, as Robert Greene
+              once said:<br /><i>
+                “The future belongs to those who learn more skills and combine
+                them in creative ways.”</i
+              >
+            </p>
           </div>
         </div>
-        <div class="quote">
-          <p>
-            I'm looking forward to always improve my skills, as Robert Greene
-            once said:<br /><i>
-              “The future belongs to those who learn more skills and combine
-              them in creative ways.”</i
-            >
-          </p>
-        </div>
-      </div>
-      <!--My projects -->
-      <div id="my-projects" class="reveal">
-        <h2>
-          My projects
-          <img
-            src="https://img.icons8.com/ios-filled/20/ffffff/portfolio.png"
-            alt="portfolio-icon"
-          />
-        </h2>
-        <div class="projects-container reveal">
-          <!--HTML & CSS projects section-->
-          <h3>
+        <!--My projects -->
+        <div id="my-projects" class="reveal">
+          <h2>
+            My projects
             <img
-              src="https://img.icons8.com/color/50/000000/html-5--v1.png"
-              alt="html-icon"
-            />HTML
-            <img
-              src="https://img.icons8.com/color/50/000000/css3.png"
-              alt="css-icon"
-            />CSS
-          </h3>
-          <div class="container-html-css">
-            <div class="card">
-              <span class="card-caption">Technical documentation page</span>
-              <a
-                href="https://fabio1498.github.io/technical-documentation/"
-                target="_blank"
-                >Take a look</a
-              >
-            </div>
-            <div class="card">
-              <span class="card-caption">Tribute page</span>
-              <a href="https://fabio1498.github.io/tributepage/" target="_blank"
-                >Take a look</a
-              >
-            </div>
-            <div class="card">
-              <span class="card-caption-pepsi">
-                <img
-                  src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/30/000000/external-pepsi-a-carbonated-soft-drink-manufactured-by-pepsico-food-color-tal-revivo.png"
-                  alt="pepsi-icon"
-                />
-                Pepsi landing page</span
-              >
-              <a
-                href="https://fabio1498.github.io/pepsilandingpage/"
-                target="_blank"
-                >Take a look</a
-              >
-              <h6>*hover on Pepsi logo, its fun</h6>
-            </div>
-            <div class="card">
-              <span class="card-caption">Login page</span>
-              <a href="https://fabio1498.github.io/loginpage/" target="_blank"
-                >Take a look</a
-              >
-            </div>
-          </div>
-          <!--Start2Impact projects section-->
-          <h3>
-            <img src="assets/img/s2i_logo.png" alt="s2i_logo" />Start2Impact
-          </h3>
-          <div class="container-s2i">
-            <div class="card">
-              <span class="card-caption" id="s2icopywrt"
-                >Progetto copywriting</span
-              >
-              <a
-                href="assets/download/progetto_copywriting_fabio_cocozza.pdf"
-                download
-                ><img
-                  src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
-                  alt="download-button"
-              /></a>
-            </div>
-            <div class="card">
-              <span class="card-caption" id="s2igraphic">Progetto grafica</span>
-              <a
-                href="assets/download/progetto_grafica_fabio_cocozza.pdf"
-                download
-                ><img
-                  src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
-                  alt="download-button"
-              /></a>
-            </div>
-            <div class="card">
-              <span class="card-caption" id="s2ihtml">Progetto HTML e CSS</span>
-              <a
-                href="assets/download/progetto_html_css_fabio_cocozza.pdf"
-                download
-                ><img
-                  src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
-                  alt="download-button"
-              /></a>
-            </div>
-            <div class="card">
-              <span class="card-caption" id="s2idiscovery"
-                >Progetto discovery pt.1 (analisi as is e ricerca utente)</span
-              >
-              <a
-                href="assets/download/progetto_discovery_pt1_fabio_cocozza.pdf"
-                download
-                ><img
-                  src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
-                  alt="download-button"
-              /></a>
-            </div>
-          </div>
-          <!--UX/UI Design projects section-->
-          <h3>
-            <img
-              src="https://img.icons8.com/color/30/000000/figma--v1.png"
-              alt="figma-icon"
-            />UX/UI Design, Figma prototypes
-          </h3>
-          <div class="container-uxui">
-            <div class="card">
-              <span class="card-caption">Tifosi <br />(Soccer app)</span>
-              <a
-                href="https://www.figma.com/proto/T9SwxyxdxwcCmyAXDj5V2u/Tifosi?page-id=0%3A1&node-id=1%3A2&starting-point-node-id=1%3A2"
-                target="_blank"
-                >Take a look</a
-              >
-              <h6>With dark mode</h6>
-            </div>
-            <div class="card">
-              <span class="card-caption">Instagram re-design</span>
-              <a
-                href="https://www.figma.com/proto/m3A6jNSnTpyXhY5M3Ebwa9/Instagram?page-id=0%3A1&node-id=6%3A146&starting-point-node-id=6%3A146"
-                target="_blank"
-                >Take a look</a
-              >
-            </div>
-            <div class="card">
-              <span class="card-caption">Travel app</span>
-              <a
-                href="https://www.figma.com/proto/su3peEgjwPUFOWAN073sYs/Travel-App?page-id=0%3A1&node-id=23%3A283&starting-point-node-id=2%3A2"
-                target="_blank"
-                >Take a look</a
-              >
-            </div>
-            <div class="card">
-              <span class="card-caption">Weather app</span>
-              <a
-                href="https://www.figma.com/proto/DM6lvQjfS6O8buFmfb7Hgg/Weather-App?page-id=0%3A1&node-id=1%3A3&starting-point-node-id=1%3A3"
-                target="_blank"
-                >Take a look</a
-              >
-            </div>
-          </div>
-          <!--Drawings-->
-          <h3>
-            <img
-              src="https://img.icons8.com/color/30/000000/adobe-illustrator--v1.png"
-            />Adobe Illustrator
-            <img
-              src="https://img.icons8.com/color/30/000000/procreate.png"
-            />Procreate, ✏️Drawings
-          </h3>
-          <h5 id="subtitle-draw">
-            ⭐Featured on
-            <a href="https://wallpapers.ispazio.net/">Wallpapers Central</a> by
-            <a href="https://www.ispazio.net/">iSpazio</a>
-          </h5>
-          <div class="container-draw">
-            <div
-              class="card thumbnail-draw"
-              style="background-image: url(assets/img/IMG_0070\ _thmb.JPG)"
-            >
-              <span class="card-caption-draw">⭐Sunset through mountains</span>
-              <div class="draw-buttons">
-                <a href="assets/img/IMG_0070.JPG" target="_blank">
-                  <img
-                    src="https://img.icons8.com/ios-glyphs/20/ffffff/full-screen--v1.png"
-                    alt="view-full-screen"
-                /></a>
-                <a href="assets/img/IMG_0070.JPG" download>
-                  <img
-                    src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
-                    alt="download-button"
-                /></a>
+              src="https://img.icons8.com/ios-filled/20/ffffff/portfolio.png"
+              alt="portfolio-icon"
+            />
+          </h2>
+          <div class="projects-container reveal">
+            <!--HTML & CSS projects section-->
+            <h3>
+              <img
+                src="https://img.icons8.com/color/50/000000/html-5--v1.png"
+                alt="html-icon"
+              />HTML
+              <img
+                src="https://img.icons8.com/color/50/000000/css3.png"
+                alt="css-icon"
+              />CSS
+            </h3>
+            <div class="container-html-css">
+              <div class="card">
+                <span class="card-caption">Technical documentation page</span>
                 <a
-                  href="https://wallpapers.ispazio.net/advert/mountains-sunset"
+                  href="https://fabio1498.github.io/technical-documentation/"
                   target="_blank"
+                  >Take a look</a
                 >
-                  <img
-                    src="assets/img/wpct_icon.png"
-                    alt="wallpaper-central-button"
-                    style="width: 20px; border-radius: 30px"
-                /></a>
               </div>
-            </div>
-            <div
-              class="card thumbnail-draw"
-              style="background-image: url(assets/img/IMG_0100_thmb.jpg)"
-            >
-              <span class="card-caption-draw">⭐Summer sunset</span>
-              <div class="draw-buttons">
-                <a href="assets/img/IMG_0100.jpg" target="_blank"
-                  ><img
-                    src="https://img.icons8.com/ios-glyphs/20/ffffff/full-screen--v1.png"
-                    alt="view-full-screen"
-                /></a>
-                <a href="assets/img/IMG_0100.jpg" download
-                  ><img
-                    src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
-                    alt="download-button"
-                /></a>
+              <div class="card">
+                <span class="card-caption">Tribute page</span>
                 <a
-                  href="https://wallpapers.ispazio.net/advert/summer-sunset"
+                  href="https://fabio1498.github.io/tributepage/"
                   target="_blank"
+                  >Take a look</a
                 >
-                  <img
-                    src="assets/img/wpct_icon.png"
-                    alt="wallpaper-central-button"
-                    style="width: 20px; border-radius: 30px"
-                /></a>
               </div>
-            </div>
-            <div
-              class="card thumbnail-draw"
-              style="background-image: url(assets/img/IMG_0138_thmb.JPG)"
-            >
-              <span class="card-caption-draw">⭐Northern lights</span>
-              <div class="draw-buttons">
-                <a href="assets/img/IMG_0138.JPG" target="_blank"
-                  ><img
-                    src="https://img.icons8.com/ios-glyphs/20/ffffff/full-screen--v1.png"
-                    alt="view-full-screen"
-                /></a>
-                <a href="assets/img/IMG_0138.JPG" download
-                  ><img
-                    src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
-                    alt="download-button"
-                /></a>
+              <div class="card">
+                <span class="card-caption-pepsi">
+                  <img
+                    src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/30/000000/external-pepsi-a-carbonated-soft-drink-manufactured-by-pepsico-food-color-tal-revivo.png"
+                    alt="pepsi-icon"
+                  />
+                  Pepsi landing page</span
+                >
                 <a
-                  href="https://wallpapers.ispazio.net/advert/northern-lights"
+                  href="https://fabio1498.github.io/pepsilandingpage/"
                   target="_blank"
+                  >Take a look</a
                 >
-                  <img
-                    src="assets/img/wpct_icon.png"
-                    alt="wallpaper-central-button"
-                    style="width: 20px; border-radius: 30px"
-                /></a>
+                <h6>*hover on Pepsi logo, its fun</h6>
+              </div>
+              <div class="card">
+                <span class="card-caption">Login page</span>
+                <a href="https://fabio1498.github.io/loginpage/" target="_blank"
+                  >Take a look</a
+                >
               </div>
             </div>
-            <div
-              class="card thumbnail-draw"
-              style="background-image: url(assets/img/IMG_0103_thmb.JPG)"
-            >
-              <span class="card-caption-draw">⭐Space jet over planets</span>
-              <div class="draw-buttons">
-                <a href="assets/img/IMG_0103.JPG" target="_blank"
-                  ><img
-                    src="https://img.icons8.com/ios-glyphs/20/ffffff/full-screen--v1.png"
-                    alt="view-full-screen"
-                /></a>
-                <a href="assets/img/IMG_0103.JPG" download
-                  ><img
-                    src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
-                    alt="download-button"
-                /></a>
+            <!--Start2Impact projects section-->
+            <h3>
+              <img src="assets/img/s2i_logo.png" alt="s2i_logo" />Start2Impact
+            </h3>
+            <div class="container-s2i">
+              <div class="card">
+                <span class="card-caption" id="s2icopywrt"
+                  >Progetto copywriting</span
+                >
                 <a
-                  href="https://wallpapers.ispazio.net/advert/planets"
-                  target="_blank"
-                >
-                  <img
-                    src="assets/img/wpct_icon.png"
-                    alt="wallpaper-central-button"
-                    style="width: 20px; border-radius: 30px"
+                  href="assets/download/progetto_copywriting_fabio_cocozza.pdf"
+                  download
+                  ><img
+                    src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
+                    alt="download-button"
                 /></a>
               </div>
-            </div>
-            <div
-              class="card thumbnail-draw"
-              style="background-image: url(assets/img/IMG_0175_thmb.JPG)"
-            >
-              <span class="card-caption-draw">Vaporwave city</span>
-              <div class="draw-buttons">
-                <a href="assets/img/IMG_0175.JPG" target="_blank"
+              <div class="card">
+                <span class="card-caption" id="s2igraphic"
+                  >Progetto grafica</span
+                >
+                <a
+                  href="assets/download/progetto_grafica_fabio_cocozza.pdf"
+                  download
                   ><img
-                    src="https://img.icons8.com/ios-glyphs/20/ffffff/full-screen--v1.png"
-                    alt="view-full-screen"
+                    src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
+                    alt="download-button"
                 /></a>
-                <a href="assets/img/IMG_0175.JPG" download
+              </div>
+              <div class="card">
+                <span class="card-caption" id="s2ihtml"
+                  >Progetto HTML e CSS</span
+                >
+                <a
+                  href="assets/download/progetto_html_css_fabio_cocozza.pdf"
+                  download
+                  ><img
+                    src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
+                    alt="download-button"
+                /></a>
+              </div>
+              <div class="card">
+                <span class="card-caption" id="s2idiscovery"
+                  >Progetto discovery pt.1 (analisi as is e ricerca
+                  utente)</span
+                >
+                <a
+                  href="assets/download/progetto_discovery_pt1_fabio_cocozza.pdf"
+                  download
                   ><img
                     src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
                     alt="download-button"
                 /></a>
               </div>
             </div>
+            <!--UX/UI Design projects section-->
+            <h3>
+              <img
+                src="https://img.icons8.com/color/30/000000/figma--v1.png"
+                alt="figma-icon"
+              />UX/UI Design, Figma prototypes
+            </h3>
+            <div class="container-uxui">
+              <div class="card">
+                <span class="card-caption">Tifosi <br />(Soccer app)</span>
+                <a
+                  href="https://www.figma.com/proto/T9SwxyxdxwcCmyAXDj5V2u/Tifosi?page-id=0%3A1&node-id=1%3A2&starting-point-node-id=1%3A2"
+                  target="_blank"
+                  >Take a look</a
+                >
+                <h6>With dark mode</h6>
+              </div>
+              <div class="card">
+                <span class="card-caption">Instagram re-design</span>
+                <a
+                  href="https://www.figma.com/proto/m3A6jNSnTpyXhY5M3Ebwa9/Instagram?page-id=0%3A1&node-id=6%3A146&starting-point-node-id=6%3A146"
+                  target="_blank"
+                  >Take a look</a
+                >
+              </div>
+              <div class="card">
+                <span class="card-caption">Travel app</span>
+                <a
+                  href="https://www.figma.com/proto/su3peEgjwPUFOWAN073sYs/Travel-App?page-id=0%3A1&node-id=23%3A283&starting-point-node-id=2%3A2"
+                  target="_blank"
+                  >Take a look</a
+                >
+              </div>
+              <div class="card">
+                <span class="card-caption">Weather app</span>
+                <a
+                  href="https://www.figma.com/proto/DM6lvQjfS6O8buFmfb7Hgg/Weather-App?page-id=0%3A1&node-id=1%3A3&starting-point-node-id=1%3A3"
+                  target="_blank"
+                  >Take a look</a
+                >
+              </div>
+            </div>
+            <!--Drawings-->
+            <h3>
+              <img
+                src="https://img.icons8.com/color/30/000000/adobe-illustrator--v1.png"
+              />Adobe Illustrator
+              <img
+                src="https://img.icons8.com/color/30/000000/procreate.png"
+              />Procreate, ✏️Drawings
+            </h3>
+            <h5 id="subtitle-draw">
+              ⭐Featured on
+              <a href="https://wallpapers.ispazio.net/">Wallpapers Central</a>
+              by
+              <a href="https://www.ispazio.net/">iSpazio</a>
+            </h5>
+            <div class="container-draw">
+              <div
+                class="card thumbnail-draw"
+                style="background-image: url(assets/img/IMG_0070\ _thmb.JPG)"
+              >
+                <span class="card-caption-draw"
+                  >⭐Sunset through mountains</span
+                >
+                <div class="draw-buttons">
+                  <a href="assets/img/IMG_0070.JPG" target="_blank">
+                    <img
+                      src="https://img.icons8.com/ios-glyphs/20/ffffff/full-screen--v1.png"
+                      alt="view-full-screen"
+                  /></a>
+                  <a href="assets/img/IMG_0070.JPG" download>
+                    <img
+                      src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
+                      alt="download-button"
+                  /></a>
+                  <a
+                    href="https://wallpapers.ispazio.net/advert/mountains-sunset"
+                    target="_blank"
+                  >
+                    <img
+                      src="assets/img/wpct_icon.png"
+                      alt="wallpaper-central-button"
+                      style="width: 20px; border-radius: 30px"
+                  /></a>
+                </div>
+              </div>
+              <div
+                class="card thumbnail-draw"
+                style="background-image: url(assets/img/IMG_0100_thmb.jpg)"
+              >
+                <span class="card-caption-draw">⭐Summer sunset</span>
+                <div class="draw-buttons">
+                  <a href="assets/img/IMG_0100.jpg" target="_blank"
+                    ><img
+                      src="https://img.icons8.com/ios-glyphs/20/ffffff/full-screen--v1.png"
+                      alt="view-full-screen"
+                  /></a>
+                  <a href="assets/img/IMG_0100.jpg" download
+                    ><img
+                      src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
+                      alt="download-button"
+                  /></a>
+                  <a
+                    href="https://wallpapers.ispazio.net/advert/summer-sunset"
+                    target="_blank"
+                  >
+                    <img
+                      src="assets/img/wpct_icon.png"
+                      alt="wallpaper-central-button"
+                      style="width: 20px; border-radius: 30px"
+                  /></a>
+                </div>
+              </div>
+              <div
+                class="card thumbnail-draw"
+                style="background-image: url(assets/img/IMG_0138_thmb.JPG)"
+              >
+                <span class="card-caption-draw">⭐Northern lights</span>
+                <div class="draw-buttons">
+                  <a href="assets/img/IMG_0138.JPG" target="_blank"
+                    ><img
+                      src="https://img.icons8.com/ios-glyphs/20/ffffff/full-screen--v1.png"
+                      alt="view-full-screen"
+                  /></a>
+                  <a href="assets/img/IMG_0138.JPG" download
+                    ><img
+                      src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
+                      alt="download-button"
+                  /></a>
+                  <a
+                    href="https://wallpapers.ispazio.net/advert/northern-lights"
+                    target="_blank"
+                  >
+                    <img
+                      src="assets/img/wpct_icon.png"
+                      alt="wallpaper-central-button"
+                      style="width: 20px; border-radius: 30px"
+                  /></a>
+                </div>
+              </div>
+              <div
+                class="card thumbnail-draw"
+                style="background-image: url(assets/img/IMG_0103_thmb.JPG)"
+              >
+                <span class="card-caption-draw">⭐Space jet over planets</span>
+                <div class="draw-buttons">
+                  <a href="assets/img/IMG_0103.JPG" target="_blank"
+                    ><img
+                      src="https://img.icons8.com/ios-glyphs/20/ffffff/full-screen--v1.png"
+                      alt="view-full-screen"
+                  /></a>
+                  <a href="assets/img/IMG_0103.JPG" download
+                    ><img
+                      src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
+                      alt="download-button"
+                  /></a>
+                  <a
+                    href="https://wallpapers.ispazio.net/advert/planets"
+                    target="_blank"
+                  >
+                    <img
+                      src="assets/img/wpct_icon.png"
+                      alt="wallpaper-central-button"
+                      style="width: 20px; border-radius: 30px"
+                  /></a>
+                </div>
+              </div>
+              <div
+                class="card thumbnail-draw"
+                style="background-image: url(assets/img/IMG_0175_thmb.JPG)"
+              >
+                <span class="card-caption-draw">Vaporwave city</span>
+                <div class="draw-buttons">
+                  <a href="assets/img/IMG_0175.JPG" target="_blank"
+                    ><img
+                      src="https://img.icons8.com/ios-glyphs/20/ffffff/full-screen--v1.png"
+                      alt="view-full-screen"
+                  /></a>
+                  <a href="assets/img/IMG_0175.JPG" download
+                    ><img
+                      src="https://img.icons8.com/material-rounded/20/ffffff/download--v1.png"
+                      alt="download-button"
+                  /></a>
+                </div>
+              </div>
 
-            <div class="card">
-              <span class="card-caption">Discover more wallpapers</span>
-              <a href="https://fabio1498.github.io/wallpapers/" target="_blank"
-                >Take a look</a
-              >
+              <div class="card">
+                <span class="card-caption">Discover more wallpapers</span>
+                <a
+                  href="https://fabio1498.github.io/wallpapers/"
+                  target="_blank"
+                  >Take a look</a
+                >
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!--Contact me section-->
-      <div id="contact-me" class="reveal">
-        <h2>
-          Contact me
-          <img
-            src="https://img.icons8.com/ios-filled/20/ffffff/phone.png"
-            alt="telephone-icon"
-          />
-        </h2>
-        <div class="contact-me-container">
-          <h1>Call me or email me</h1>
-          <p>
-            You can scan the QR code to call me or simply click the email below
-            to open your favorite email app and write me.
-          </p>
-          <div class="contact-me-form">
-            <figure>
-              <img src="assets/img/qr-code.png" alt="qr-code" id="qr-code" />
-              <figcaption>Scan</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/img/icons8-email-aperta-96.png" alt="qr-code" />
-              <form action="mailto:cocozzafabio@outlook.it">
-                <input type="submit" value="Email me" />
-              </form>
-            </figure>
-          </div>
-          <div class="contact-me-simple-form">
-            <p>If you like the old-style, you can use the details below...🙄</p>
-            <p><b>Telephone</b>: +39 366-3897999</p>
-            <p><b>Email</b>: cocozzafabio@outlook.it</p>
+        <!--Contact me section-->
+        <div id="contact-me" class="reveal">
+          <h2>
+            Contact me
+            <img
+              src="https://img.icons8.com/ios-filled/20/ffffff/phone.png"
+              alt="telephone-icon"
+            />
+          </h2>
+          <div class="contact-me-container">
+            <h1>Call me or email me</h1>
+            <p>
+              You can scan the QR code to call me or simply click the email
+              below to open your favorite email app and write me.
+            </p>
+            <div class="contact-me-form">
+              <figure>
+                <img src="assets/img/qr-code.png" alt="qr-code" id="qr-code" />
+                <figcaption>Scan</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="assets/img/icons8-email-aperta-96.png"
+                  alt="qr-code"
+                />
+                <form action="mailto:cocozzafabio@outlook.it">
+                  <input type="submit" value="Email me" />
+                </form>
+              </figure>
+            </div>
+            <div class="contact-me-simple-form">
+              <p>
+                If you like the old-style, you can use the details below...🙄
+              </p>
+              <p><b>Telephone</b>: +39 366-3897999</p>
+              <p><b>Email</b>: cocozzafabio@outlook.it</p>
+            </div>
           </div>
         </div>
+        <!--End main central div (line 74)-->
+        <footer>
+          <p>
+            All the icons/images and all the GIF's on this website are taken
+            from<a target="_blank" href="https://icons8.it"> ICONS8</a>.
+            <br />Non-commercial use. All the credits belong to the creators on
+            <a target="_blank" href="https://icons8.it"> ICONS8</a>. <br />This
+            website, the icons and all the GIF's, will be used only for a
+            personal use. <br />The reveal on-scroll script used is taken from
+            <a
+              target="_blank"
+              href="https://www.codingsnow.com/2021/01/reveal-webpage-elements-on-scroll-on.html"
+              >CodingSnow</a
+            >.
+          </p>
+        </footer>
       </div>
-      <!--End main central div (line 74)-->
-      <footer>
-        <p>
-          All the icons/images and all the GIF's on this website are taken
-          from<a target="_blank" href="https://icons8.it"> ICONS8</a>.
-          <br />Non-commercial use. All the credits belong to the creators on
-          <a target="_blank" href="https://icons8.it"> ICONS8</a>. <br />This
-          website, the icons and all the GIF's, will be used only for a personal
-          use. <br />The reveal on-scroll script used is taken from
-          <a
-            target="_blank"
-            href="https://www.codingsnow.com/2021/01/reveal-webpage-elements-on-scroll-on.html"
-            >CodingSnow</a
-          >.
-        </p>
-      </footer>
     </div>
 
     <script>
@@ -876,6 +902,17 @@
             reveals[i].classList.remove("active");
           }
         }
+      }
+
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+      }
+
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
       }
     </script>
   </body>
