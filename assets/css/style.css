@@ -846,20 +846,21 @@ body {
 }
 .card a {
   text-decoration: none;
+  border-bottom: 1px solid #ff0046;
   color: white;
-  background-color: #ff0046;
-  box-shadow: 0px 0px 10px rgba(31, 31, 31, 0.253);
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 20px;
   vertical-align: middle;
-  font-weight: 500;
+  font-weight: 300;
 }
 .card a:hover {
   transform: scale(1.1);
   transition: 0.4s;
-  background-color: midnightblue;
+  background-color: #ff0046;
   color: white;
+  font-weight: 500;
 }
+
 .card-caption-pepsi {
   font-weight: 500;
   padding: 4px;
@@ -884,7 +885,12 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-
+.draw-buttons {
+  background-color: rgba(2, 2, 2, 0.356);
+  padding: 14px;
+  border-radius: 50px;
+  backdrop-filter: blur(4px);
+}
 .card-caption-draw {
   color: white;
   text-shadow: 0px 2px 2px midnightblue;
