@@ -333,10 +333,10 @@ body {
 #ig-prvt {
   background: linear-gradient(110deg, #351ff7, #ff8a2b);
   background-size: 180% 180%;
-  animation: gradient-animation 8s ease infinite;
+  animation: gradient-animation 4s ease infinite;
 }
-#ig-ux {
-  background: linear-gradient(120deg, #1900ff, #ff7300);
+#behance {
+  background: linear-gradient(120deg, #0054f7, #699bff);
   background-size: 180% 180%;
   animation: gradient-animation 8s ease infinite;
 }
@@ -1095,8 +1095,8 @@ footer a {
   border: 4px solid #f3f3f3;
   border-radius: 50%;
   border-top: 4px solid #ff0046;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
 }
 
 @-webkit-keyframes spin {
