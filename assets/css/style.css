@@ -58,7 +58,7 @@ body {
   width: 30px;
 }
 #full-size-imgprofile:hover {
-  background-color: #303030;
+  background-color: #ff89a7;
   border-top-left-radius: 10px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -841,7 +841,7 @@ body {
 }
 .card-caption-draw {
   color: white;
-  text-shadow: 0px 2px 2px midnightblue;
+  text-shadow: 0px 2px 2px rgb(0, 0, 0);
   text-align: center;
 }
 /*Sixth card (Contact me)*/
