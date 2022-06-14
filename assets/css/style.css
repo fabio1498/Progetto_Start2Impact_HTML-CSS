@@ -1015,8 +1015,11 @@ footer a {
   .year {
     display: none;
   }
+  .softwareskills {
+    justify-content: center;
+  }
   .soft-skills-container {
-    justify-content: space-evenly;
+    justify-content: flex-start;
   }
   .degree {
     display: flex;
