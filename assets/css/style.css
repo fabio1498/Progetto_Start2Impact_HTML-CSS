@@ -6,8 +6,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #141414;
+  font-family: "Nunito", sans-serif;
+  background-color: #ffffff;
 }
 /*Scroll on reveal*/
 .reveal {
@@ -46,11 +46,11 @@ body {
   border-radius: 20px;
   margin-top: 20px;
   padding: 20px;
-  color: white;
+  background-color: #ffb3c6;
   display: flex;
   flex-direction: column;
   line-height: 40px;
-  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  box-shadow: 0px 0px 20px rgb(228, 228, 228);
   position: fixed;
 }
 #full-size-imgprofile {
@@ -58,46 +58,48 @@ body {
   width: 30px;
 }
 #full-size-imgprofile:hover {
-  background-color: #ff0046;
-  border-top-left-radius: 20px;
+  background-color: #303030;
+  border-top-left-radius: 10px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
 .container-left #image-profile {
-  border-radius: 20px;
+  border-radius: 10px;
   width: 250px;
   height: 250px;
-  box-shadow: 0px 0px 10px rgb(10, 10, 10);
 }
 
 .container-left h1 {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 30px;
   margin-top: 10px;
+  color: #ffffff;
 }
 .container-left h2 {
   text-transform: uppercase;
   font-size: 18px;
-  color: white;
-  text-shadow: 2px 2px 2px #ff0046;
+  color: #153980;
+  font-weight: 900;
 }
 .container-left a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   margin-top: 2px;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 600;
   padding: 4px;
   transition: 0.2s ease-in-out;
-  width: 200px; /*Not visible but needed for a fluid hover*/
-  border-radius: 30px; /*Not visible but needed for a fluid hover*/
+  width: 220px; /*Not visible but needed for a fluid hover*/
+  border-radius: 10px; /*Not visible but needed for a fluid hover*/
 }
 
 .container-left a:hover {
-  background-color: #ff0046;
-  width: 200px;
-  border-radius: 30px;
+  font-weight: 700;
+  width: 220px;
+  border-radius: 10px;
   transform: scale(1.08);
+  background-color: #ff89a7;
 }
 
 .container-left a img {
@@ -123,11 +125,8 @@ body {
   width: 80%;
   height: 640px;
   padding: 20px;
-  background: linear-gradient(110deg, #2ba0ff, #351ff7, #ffc62b);
-  background-size: 180% 180%;
-  animation: gradient-animation 8s ease infinite;
-  color: white;
-  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  background-color: #b3ccff;
+  color: #153980;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -135,33 +134,37 @@ body {
 }
 #home h1 {
   font-size: 3vw;
+  font-weight: 800;
+  margin-bottom: 20px;
 }
 #home p {
   line-height: 2;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 .home-content {
-  width: 70%;
+  width: 80%;
 }
 .home-content .s2i {
   text-decoration: none;
-  color: white;
+  color: #153980;
   font-weight: 700;
   transition: 0.4s ease;
 }
 .home-content .s2i:hover {
-  text-shadow: 2px 2px 1px #ff0046;
+  color: white;
+  text-shadow: 2px 2px 1px #ff7195;
 }
 .home-content .scroll-down {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 40px;
   padding: 14px;
   border-radius: 20px;
-  color: white;
-  font-weight: 700;
+  color: #153980;
+  font-weight: 400;
   position: relative;
   vertical-align: middle;
 }
@@ -218,20 +221,21 @@ body {
 /*Second card content (About me) */
 
 #about-me {
-  color: white;
+  color: #5a0b36;
+  background-color: #ffd3f8;
   margin-top: 20px;
   margin-left: 10px;
   width: 80%;
   height: 100%;
   padding: 20px;
+
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 0px 20px rgb(0, 0, 0);
   border-radius: 20px;
 }
 
 #about-me h2 {
-  border-bottom: 4px solid #ff0046;
+  border-bottom: 4px solid #5a0b36;
   width: 160px;
 }
 .snowflake {
@@ -252,13 +256,13 @@ body {
 .about-me-content {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 .about-me-content #memoji {
   width: 200px;
   margin: 0 auto;
-  border: 4px solid #ff0046;
+  border: 4px solid #7e3760;
   border-radius: 150px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -270,16 +274,27 @@ body {
 .about-me-content p {
   line-height: 2;
   margin: 0 auto;
-  font-weight: 400;
+  font-weight: 600;
+  color: #5a0b36;
 }
 .about-me-hobbies {
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: flex-start;
   margin-top: 20px;
   margin-bottom: 20px;
-  gap: 20px;
+  gap: 10px;
+}
+.about-me-hobbies p {
+  background-color: #5a0b3625;
+  padding: 10px;
+  border-radius: 10px;
+  color: #5a0b36;
+  font-weight: 600;
+  width: 230px;
+  height: 50px;
 }
 #soccer-ball {
   background-color: white;
@@ -289,17 +304,21 @@ body {
 .about-me-hobbies img {
   width: 50px;
   vertical-align: middle;
-  margin-right: 4px;
+  margin-right: 10px;
 }
 .about-me-content a {
   text-decoration: none;
-  color: white;
-  font-weight: 700;
+  color: #5a0b36;
+  font-weight: 800;
+}
+.about-me-content h3 {
+  font-weight: 800;
+  margin-top: 10px;
 }
 .about-me-content a:hover {
   color: white;
-  background-color: #ff0046;
-  padding: 2px;
+  background-color: #5a0b36;
+  padding: 4px;
   transition: 0.1s ease-in;
   border-radius: 4px;
   border: none;
@@ -309,26 +328,27 @@ body {
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 .about-me-socials a {
   text-align: left;
-  padding: 8px;
-  border-radius: 20px;
+  padding: 10px 10px;
+  border-radius: 10px;
   font-size: 14px;
   vertical-align: middle;
-  background-color: #ff0046;
   color: white;
-  font-weight: 500;
+  font-weight: 600;
 }
 .about-me-socials img {
   vertical-align: middle;
+  margin-right: 6px;
 }
 .about-me-socials a:hover {
-  padding: 10px;
-  border-radius: 20px;
+  transform: scale(1.1);
   transition: 0.2s ease-in-out;
+  padding: 10px 10px;
+  border-radius: 10px;
 }
 #ig-prvt {
   background: linear-gradient(110deg, #351ff7, #ff8a2b);
@@ -368,13 +388,14 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   gap: 10px;
+  font-weight: 600;
 }
 .about-me-personal-info li {
   list-style-type: none;
   margin-bottom: 10px;
 }
 .about-me-personal-info p {
-  color: white;
+  color: #5a0b36;
   background-color: #ff5959;
   padding: 6px;
   border-radius: 10px;
@@ -384,29 +405,29 @@ body {
 }
 .about-me-personal-info a {
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /*Third card content (Resume) */
 #resume {
-  color: white;
+  color: #201247;
   margin-top: 20px;
   margin-left: 10px;
   width: 80%;
   height: 100%;
   padding: 20px;
-  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  background-color: #dfd3ff;
   border-radius: 20px;
 }
 #resume h2 {
-  border-bottom: 4px solid #ff0046;
+  border-bottom: 4px solid #201247;
   width: 140px;
 }
 #resume h2 img {
   vertical-align: middle;
 }
 #resume h4 {
-  color: rgb(235, 235, 235);
+  color: #201247;
   font-weight: 300;
 }
 #resume h4 img {
@@ -432,15 +453,14 @@ body {
   text-align: center; /*needed for center the dotted line*/
 }
 .timeline-vertical {
-  border-left: 4px dotted rgb(224, 224, 224);
+  border-left: 4px dotted #201247;
   height: 580px;
   margin-top: 40px;
   position: absolute;
 }
 .year {
-  background-color: #ff0046;
-  box-shadow: 0px 0px 20px rgb(0, 0, 0);
-  color: white;
+  background-color: #201247;
+  color: #dfd3ff;
   font-weight: 700;
   height: 40px;
   padding: 8px;
@@ -458,10 +478,10 @@ body {
   display: flex;
   justify-content: space-between; /*it puts on the starts the degree and the button to look at it at the end*/
   align-items: center;
-  background-color: #272727;
+  background-color: #ffa9de;
   color: white;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+
   height: 40px;
   padding: 8px;
   margin-bottom: 30px;
@@ -489,11 +509,10 @@ body {
   background-color: #0a0a23;
 }
 .s2impact {
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(32, 196, 59);
   margin-bottom: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  box-shadow: 0px 0px 0px rgb(0, 0, 0);
 }
 .diploma-logo {
   width: 30px;
@@ -503,9 +522,14 @@ body {
 .more_s2i {
   position: relative;
   padding: 8px;
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(32, 196, 59);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+.more_s2i h5 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 .percorso_s2i img {
   width: 40px;
@@ -517,204 +541,88 @@ body {
   transition: 0.1s ease-in;
 }
 .percorso_s2i .completed {
-  border: 4px solid #1bc75b;
+  border: 4px solid #ffffff;
 }
 .percorso_s2i .tocomplete {
   opacity: 50%;
 }
 /*Fourth card content (Skills) */
 #skills {
-  color: white;
+  color: #0d1666;
+  background-color: #e4e6ff;
   margin-top: 20px;
   margin-left: 10px;
   width: 80%;
   height: 100%;
   padding: 20px;
-  box-shadow: 0px 0px 20px rgb(0, 0, 0);
   border-radius: 20px;
 }
 #skills h2 {
-  border-bottom: 4px solid #ff0046;
+  border-bottom: 4px solid #0d1666;
   width: 120px;
+}
+.skillcontainer {
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 600;
+}
+.skillcontainer img {
+  width: 50px;
+}
+.skillcontainer,
+.html {
+  color: white;
+  background-color: rgb(255, 131, 48);
+}
+.second {
+  color: white;
+  background-color: #039be5;
+}
+.third {
+  color: white;
+  background-color: rgb(29, 29, 29);
+}
+.fourth {
+  background-color: #771aa6;
+}
+.fifth {
+  background-color: #092347;
+}
+.sixth {
+  background-color: #ca4e2a;
+}
+.seventh {
+  background-color: rgb(54, 167, 54);
+}
+.eight {
+  background-color: #0054f7;
+}
+.ninth {
+  background-color: #84c3ff;
+}
+.softwareskills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 10px;
 }
 .skills-container {
   width: 100%;
   display: flex;
-  flex-direction: row; /*useful to have the skills in two columns instead of two*/
+  flex-direction: column; /*useful to have the skills in two columns instead of two*/
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin-top: 10px;
 }
 .skills-container img {
   height: 50px;
-}
-/*html-css bar*/
-.skill {
-  height: 30px;
-  width: 50%; /*width that takes half of the container which allows to have the skills on two columns*/
-  display: flex;
-  flex-direction: row;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.html-css-bar {
-  width: 0%;
-  height: 100%;
-  background-color: #e96329;
-  color: white;
-  font-weight: 500;
-  border-radius: 10px;
-  padding: 10px;
-  animation: fill-bar 6s infinite;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; /*keeps the name of the skill at the left, and the percentage at right*/
-}
-.percentage {
-  margin-left: 10px; /*needed to not go over on the name of the skill with the percentage*/
-}
-@keyframes fill-bar {
-  from {
-    width: 20%;
-  }
-  to {
-    width: 65%;
-  }
-}
-/*figma skill */
-
-.figma-bar {
-  width: 0%;
-  height: 100%;
-  background-color: #1e1e1e;
-  color: white;
-  font-weight: 500;
-  border-radius: 10px;
-  padding: 10px;
-  animation: fill-bar-figma 6s infinite;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-@keyframes fill-bar-figma {
-  from {
-    width: 20%;
-  }
-  to {
-    width: 75%;
-  }
-}
-/*xd skill */
-
-.xd-bar {
-  width: 0%;
-  height: 100%;
-  background-color: #ff61f6;
-  color: white;
-  font-weight: 500;
-  border-radius: 10px;
-  padding: 10px;
-  animation: fill-bar-xd 6s infinite;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-@keyframes fill-bar-xd {
-  from {
-    width: 24%;
-  }
-  to {
-    width: 70%;
-  }
-}
-/*photoshop skill */
-
-.photoshop-bar {
-  width: 0%;
-  height: 100%;
-  background-color: #2da9ff;
-  color: white;
-  font-weight: 500;
-  border-radius: 10px;
-  padding: 10px;
-  animation: fill-bar-photoshop 6s infinite;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-@keyframes fill-bar-photoshop {
-  from {
-    width: 24%;
-  }
-  to {
-    width: 55%;
-  }
-}
-/*illustrator skill */
-
-.illustrator-bar {
-  width: 0%;
-  height: 100%;
-  background-color: #f59300;
-  color: white;
-  font-weight: 500;
-  border-radius: 10px;
-  padding: 10px;
-  animation: fill-bar-illustrator 6s infinite;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-@keyframes fill-bar-illustrator {
-  from {
-    width: 20%;
-  }
-  to {
-    width: 65%;
-  }
-}
-/*copywriting skill */
-.copywriting-bar {
-  width: 0%;
-  height: 100%;
-  background-color: #2aca32;
-  color: white;
-  font-weight: 500;
-  border-radius: 10px;
-  padding: 10px;
-  animation: fill-bar-copywriting 6s infinite;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-@keyframes fill-bar-copywriting {
-  from {
-    width: 26%;
-  }
-  to {
-    width: 75%;
-  }
-}
-/*office skill */
-.office-bar {
-  width: 0%;
-  height: 100%;
-  background-color: #f33b00;
-  color: white;
-  font-weight: 500;
-  border-radius: 10px;
-  padding: 10px;
-  animation: fill-bar-office 6s infinite;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-@keyframes fill-bar-office {
-  from {
-    width: 20%;
-  }
-  to {
-    width: 60%;
-  }
 }
 
 #skills p {
@@ -727,7 +635,7 @@ body {
 }
 #skills h3 {
   margin-top: 10px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .soft-skills-container {
   width: 100%;
@@ -735,35 +643,49 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 4px;
 }
 .soft-skills-container .soft-skill {
   padding: 8px;
-  background-color: #ff0046;
+  background-color: #0d1666;
   color: white;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
-#skills .quote {
-  text-align: center;
-  font-weight: 500;
+.ux-skills {
+  padding: 8px;
+  background-color: rgb(66, 148, 255);
+  color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
+.ui-skills {
+  padding: 8px;
+  background-color: rgb(53, 33, 163);
+  color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 /*Fifth card (My Projects)*/
 #my-projects {
-  color: white;
+  color: #e4e6ff;
   margin-top: 20px;
   margin-left: 10px;
   width: 80%;
   height: 100%;
   padding: 20px;
-  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  background-color: #0d1666;
   border-radius: 20px;
 }
 #my-projects h2 {
-  border-bottom: 4px solid #ff0046;
+  border-bottom: 4px solid #e4e6ff;
   width: 180px;
 }
+
 #my-projects h3 img {
   width: 30px;
   margin-right: 4px;
@@ -814,57 +736,82 @@ body {
   margin-bottom: 20px;
 }
 #subtitle-draw a {
-  text-decoration: none;
-  color: #ff0046;
+  color: #e4e6ff;
+  font-weight: 800;
 }
 #subtitle-draw a:hover {
   transition: 0.4s;
-  color: white;
-  background-color: midnightblue;
+  color: #0d1666;
+  background-color: #e4e6ff;
   padding: 2px;
   border-radius: 4px;
 }
 .card {
   width: 200px;
   height: 200px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+.coding {
+  background-color: #6ba3e734;
+}
+.start2impactcourse {
+  background-color: #6ba3e734;
+  font-size: 16px;
+}
+
+.figmaproto {
+  background-color: #6ba3e734;
+}
+.morewallpaper {
+  background-color: #6ba3e734;
+}
+.card h6 {
+  color: white;
 }
 .card:hover {
   transform: translateY(-6px);
   transition: 0.4s ease;
 }
 .card-caption {
-  font-weight: 500;
+  font-weight: 700;
+  text-transform: uppercase;
   padding: 4px;
   text-align: center;
   color: white;
+  width: 160px;
+}
+.moreinfocaption {
+  width: 160px;
+  color: white;
+  text-align: center;
+  font-weight: 300;
 }
 .card a {
   text-decoration: none;
-  border-bottom: 1px solid #ff0046;
+  background-color: rgba(255, 255, 255, 0.322);
   color: white;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   vertical-align: middle;
-  font-weight: 300;
+  font-weight: 600;
 }
 .card a:hover {
   transform: scale(1.1);
   transition: 0.4s;
-  background-color: #ff0046;
+  background-color: rgb(238, 50, 90);
   color: white;
-  font-weight: 500;
 }
 
 .card-caption-pepsi {
-  font-weight: 500;
+  font-weight: 700;
+  text-transform: uppercase;
   padding: 4px;
   text-align: center;
+  color: #e4e6ff;
 }
 .card-caption-pepsi img {
   width: 30px;
@@ -874,8 +821,9 @@ body {
   transform: rotate(360deg);
   transition: 2s ease;
 }
+
 .container-s2i a {
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .container-draw a {
   border-radius: 20px;
@@ -898,17 +846,17 @@ body {
 }
 /*Sixth card (Contact me)*/
 #contact-me {
-  color: white;
+  color: #dfd3ff;
   margin-top: 20px;
   margin-left: 10px;
   width: 80%;
   height: 100%;
+  background-color: #201247;
   padding: 20px;
-  box-shadow: 0px 0px 20px rgb(0, 0, 0);
   border-radius: 20px;
 }
 #contact-me h2 {
-  border-bottom: 4px solid #ff0046;
+  border-bottom: 4px solid #dfd3ff;
   width: 180px;
 }
 .contact-me-container {
@@ -946,14 +894,15 @@ input[type="submit"] {
   border: none;
   border-radius: 30px;
   padding: 8px;
-  background-color: #ff0046;
-  color: white;
+  background-color: #dfd3ff;
+  color: #201247;
   cursor: pointer;
 }
 .contact-me-container input:hover {
   transform: scale(1.1);
   transition: 0.4s;
-  background-color: midnightblue;
+  background-color: rgb(238, 50, 90);
+  color: white;
 }
 .contact-me-form figcaption {
   font-weight: 500;
@@ -1001,9 +950,9 @@ footer a {
   .skills-container {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .skill {
     width: 100%;
