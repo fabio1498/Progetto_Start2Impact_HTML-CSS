@@ -46,7 +46,7 @@ body {
   border-radius: 20px;
   margin-top: 20px;
   padding: 20px;
-  background-color: #ffb3c6;
+  background-color: #222222;
   display: flex;
   flex-direction: column;
   line-height: 40px;
@@ -79,7 +79,7 @@ body {
 .container-left h2 {
   text-transform: uppercase;
   font-size: 18px;
-  color: #e2597c;
+  color: #ff89a7;
   font-weight: 900;
 }
 .container-left a {
@@ -567,7 +567,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-weight: 600;
 }
 .skillcontainer img {
@@ -764,6 +764,19 @@ body {
 .figmaproto {
   background-color: #6ba3e7c0;
 }
+.more {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #0d1666;
+  transform: translateY(0px);
+  transition: 0s;
+}
+
 .morewallpaper {
   background-color: #6ba3e718;
 }
